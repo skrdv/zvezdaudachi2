@@ -1,0 +1,47 @@
+.node--konkurs{
+  .comments-wrapper{
+    margin:auto;
+    width:600px;
+    margin-top: 10px;
+  }
+  .fields-carousel{
+    .carousel-inner{
+      height: 600px;
+      .item{
+        height: 600px;
+        text-align: center;
+        img{
+          margin: auto;
+        }
+        &.item-type-media_vk_youtube{
+          div{
+            height: 100%;
+            width: 100%;
+          }
+        }
+        &.item-type-media_vk_video{
+          iframe{
+            height: 600px;
+            width: 100%;
+          }
+        }
+        &.item-type-other{
+          video{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .carousel-control{
+      width: 45px;
+      height: 45px;
+      top: 50%;
+    }
+  }
+  .file-video{
+      video{
+        max-width: 100%;
+        max-height: 600px;
+      }
+  }
+}

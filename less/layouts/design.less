@@ -1,0 +1,1219 @@
+html{
+  min-height: 100%;
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+body{
+  background: lightgray;
+}
+.a{
+  cursor: pointer;
+}
+
+#zvezda-container{
+  background: #ffffff;
+}
+
+
+// Костыль на минимальную ширину
+
+.spike-stud-min-width {
+  min-width:768px;height:1px;position:absolute;left:0;
+}
+
+
+
+
+
+//Хедер
+#zvezda-header-wrapper {
+  padding-bottom: 14px;
+  .region-header {
+    padding-top: 10px;
+    min-height: 26px;
+    #block-system-user-menu {
+      .menu {
+        text-align: right;
+        li {
+          display: inline-block;
+          width: auto;
+          a {
+            display: inline;
+            padding: 5px;
+            font-family: 'appleberry';
+            color: @color_3;
+          }
+        }
+      }
+    }
+    .login-link {
+      float: right;
+      text-decoration: none;
+      font-family: 'appleberry';
+      color: @color_3;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    margin-bottom: 10px;
+  }
+
+  #zvezda-header-left {
+    padding: 0px;
+    #zvezda-logo-1 {
+      font-family: 'appleberry';
+      font-size: 30px;
+      color: rgb(114, 114, 115);
+      text-align: center;
+      margin-bottom: 9px;
+      letter-spacing: 0.2em;
+    }
+  }
+  #zvezda-header-right {
+    #zvezda-logo-2 {
+      width: 260px;
+      height: 100px;
+      margin: 10px auto 0 auto;
+      background-image: url(../../img/Logo_CDS.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+
+  #zvezda-header-row {
+    padding: 10px 0 0 0;
+    #zvezda-slider-wrapper {
+      img,
+      .simply-scroll-clip,
+      .simply-scroll-container,
+      li {
+        height: 100%;
+      }
+      li {
+        width: 222px;
+      }
+      .simply-scroll-clip,
+      .simply-scroll-container {
+        width: 100%;
+      }
+    }
+  }
+  #zvezda-logo-3 {
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 260px;
+    &.zvezda-logo-3 {
+      background-image: url('../../img/zvezda_header_logo/zvezdalogo_header_color_8.png');
+      .zvezda-logo-link {
+        height: 155px;
+        display: block;
+      }
+    }
+    #zvezda-logo-3-social {
+      padding: 0 2px;
+      text-align: center;
+      .social-btns {
+        padding: 0px;
+        margin: 0px;
+        li {
+          display: inline-block;
+          a {
+            height: 47px;
+            width: 47px;
+            display:inline-block;
+            background-size: cover;
+            &.vk {
+              background-image: url('../../img/social/vk.png')
+            }
+            &.fb {
+              background-image: url('../../img/social/fb.png')
+            }
+            &.od {
+              background-image: url('../../img/social/od.png')
+            }
+            &.in {
+              background-image: url('../../img/social/in.png')
+            }
+            &.yt {
+              background-image: url('../../img/social/yt.png')
+            }
+            &.tw {
+              background-image: url('../../img/social/tw.png')
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Футер
+#zvezda-footer {
+  height: 149px;
+  & > .row {
+    padding: 20px 0 0 0;
+    border-top: 2pt solid rgb(114, 114, 115);
+  }
+  #zvezda-footer-left {
+    margin-bottom: 20px;
+    #zvezda-footer-left-contacts {
+      text-align: center;
+      a {
+        color: #808080;
+      }
+    }
+    #zvezda-footer-left-links{
+      text-align: center;
+      a {
+        &.sotrudnichestvo{
+          color: lighten(#708090,20%);
+          font-size: 0.8em;
+        }
+      }
+      #footer-kira-agency{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        span{
+          vertical-align: middle;
+          &.logo{
+            display: inline-block;
+            background-color: @color_1;
+            padding: 1px;
+            width: 10%;
+            img{
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+          &.text{
+            display: inline-block;
+            max-width:69%;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 0.9em;
+            color:#808080;
+          }
+        }
+      }
+    }
+  }
+  #zvezda-footer-middle {
+    .first-line-tite {
+      font-size: 0.5em;
+      margin-bottom: 2px;
+    }
+    & > ul {
+      clear: both;
+      li {
+        font-size: 0.5em;
+        display: block;
+        float: left;
+      }
+      &.first-line {
+        li {
+          margin-left: 0;
+          padding-left: 38px;
+          padding-top: 3px;
+          min-height: 40px;
+          width: 49%;
+          background-position: left top;
+          background-repeat: no-repeat;
+          background-size: 36px auto;
+
+        }
+      }
+      &.second-line {
+        padding-top: 10px;
+        li {
+          height: 50px;
+          margin-top: 10px;
+          width:49%;
+          text-align: center;
+          display: inline-block;
+          &:first-child {
+            background-position: bottom center;
+            background-size: auto 50px;
+            background-repeat: no-repeat;
+          }
+          img {
+            max-height: 90%;
+            max-width: 80%;
+          }
+        }
+      }
+    }
+
+  }
+  #zvezda-footer-right {
+    margin-top: 10px;
+    #zvezda-footer-right-logo {
+      height: 40px;
+      width: 160px;
+      margin: auto;
+      background-image: url(../../img/Logo_CDS.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+    }
+  }
+}
+
+
+@media (min-width: @screen-sm-min) {
+  //Хедер
+  #zvezda-header-wrapper {
+    padding-bottom: 14px;
+    .region-header {
+      padding-top: 10px;
+      min-height: 26px;
+      #block-system-user-menu {
+        .menu {
+          text-align: right;
+          li {
+            display: inline-block;
+            width: auto;
+            a {
+              display: inline;
+              padding: 5px;
+              color: @color_3;
+              &:hover {
+                color: @color_2;
+              }
+            }
+          }
+        }
+      }
+      .login-link{
+        font-size: 1em;
+        margin-bottom: 0;
+      }
+      margin-bottom: 10px;
+    }
+    #zvezda-header-left {
+      padding-left: 0px;
+      padding-top: 15px;
+      #zvezda-logo-1 {
+        padding-left: 15px;
+        font-size: 17px;
+        color: rgb(114, 114, 115);
+        text-align: center;
+        line-height: 26px;
+        height: 20px;
+        margin-bottom: 9px;
+        margin-left: 14px;
+        letter-spacing: 0.6em;
+        position: relative;
+        top: -28px;
+      }
+    }
+    #zvezda-header-right {
+      #zvezda-logo-2 {
+        width: 124px;
+        margin: auto;
+        height: 41.7px;
+        position: relative;
+        right: 23px;
+      }
+    }
+
+    #zvezda-header-row {
+      position: relative;
+      padding: 0 0 0 0;
+      height: 136px;
+      overflow: hidden;
+      #zvezda-slider-wrapper {
+        img,
+        .simply-scroll-clip,
+        .simply-scroll-container,
+        li {
+          height: 100%;
+        }
+        li {
+          width: 222px;
+        }
+        .simply-scroll-clip,
+        .simply-scroll-container {
+          width: 100%;
+        }
+      }
+    }
+    #zvezda-logo-3 {
+      position: absolute;
+      height: 100%;
+      background: #ffffff;
+      width: 326px;
+      z-index: 2;
+      left: 50%;
+      margin-left: -163px;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      &.zvezda-logo-3{
+        .zvezda-logo-link {
+          height: 136px;
+          display: block;
+          &:hover {
+            opacity: 0.5;
+            background: #ffffff;
+            transition: all 0.5s ease-out;
+          }
+        }
+      }
+      #zvezda-logo-3-social {
+        position: absolute;
+        padding: 0 26px;
+        bottom: 0;
+        right: 0;
+        .social-btns {
+          padding: 0px;
+          margin: 0px;
+          li {
+            display: inline-block;
+            a {
+              height: 20px;
+              width: 20px;
+              display: inline-block;
+              &:hover {
+                opacity: 0.5;
+                transition: opacity 0.3s ease-out;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Футер
+  #zvezda-footer {
+    height: 149px;
+    & > .row {
+      padding: 20px 0 0 0;
+      border-top: 2pt solid rgb(114, 114, 115);
+    }
+    #zvezda-footer-left {
+      margin-bottom: 0;
+      #zvezda-footer-left-contacts {
+        font-size: 12px;
+        text-align: center;
+        a {
+          color: gray;
+        }
+      }
+      #zvezda-footer-left-links{
+        #footer-kira-agency{
+          width: 100%;
+          span{
+            &.logo{
+              width: 29%;
+            }
+            &.text{
+              font-size: 0.7em;
+              width: 67%;
+            }
+          }
+        }
+      }
+    }
+    #zvezda-footer-middle {
+      .first-line-tite {
+        font-size: 0.5em;
+        margin-bottom: 2px;
+      }
+      & > ul {
+        clear: both;
+        li {
+          font-size: 0.5em;
+          display: block;
+          float: left;
+        }
+        &.first-line {
+          li {
+            margin-left: 0;
+            padding-left: 38px;
+            padding-top: 3px;
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 36px auto;
+            min-height: 40px;
+            width: 25%;
+          }
+        }
+        &.second-line {
+          padding-top: 10px;
+          li {
+            height: 60px;
+            background-repeat: no-repeat;
+            width: 25%;
+            &:first-child {
+              background-position: 42px -5px;
+              background-size: auto 70px;
+              text-align: left;
+            }
+            display: inline-block;
+            img {
+              max-height: 90%;
+              max-width: 90%;
+            }
+          }
+        }
+      }
+
+    }
+    #zvezda-footer-right {
+      margin-top: 0;
+      #zvezda-footer-right-logo {
+        height: 58px;
+        width: 115px;
+        margin-left: 10px;
+        background-image: url(../../img/Logo_CDS_footer.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+      }
+    }
+  }
+}
+
+
+
+@media (min-width: @screen-md-min){
+  //Хедер
+  #zvezda-header-wrapper {
+    padding-bottom: 14px;
+    .region-header {
+      padding-top: 10px;
+      min-height: 26px;
+      #block-system-user-menu {
+        .menu {
+          li {
+            a {
+              padding: 5px;
+            }
+          }
+        }
+      }
+      margin-bottom: 10px;
+    }
+
+    #zvezda-header-left {
+      padding-left: 0px;
+      padding-top: 15px;
+      #zvezda-logo-1 {
+        top: auto;
+        padding-left: 15px;
+        font-size: 18px;
+        color: rgb(114, 114, 115);
+        line-height: 20px;
+        height: 20px;
+        margin-bottom: 9px;
+        margin-left: 14px;
+        letter-spacing: 0.6em;
+      }
+    }
+    #zvezda-header-right {
+      #zvezda-logo-2 {
+        width: 124px;
+        height: 41.7px;
+        right: 23px;
+      }
+    }
+
+    #zvezda-header-row {
+      height: 136px;
+      #zvezda-slider-wrapper {
+        img,
+        .simply-scroll-clip,
+        .simply-scroll-container,
+        li {
+          height: 100%;
+        }
+        li {
+          width: 222px;
+        }
+        .simply-scroll-clip,
+        .simply-scroll-container {
+          width: 100%;
+        }
+      }
+    }
+    #zvezda-logo-3 {
+      height: 100%;
+      width: 326px;
+      margin-left: -163px;
+      top: 0;
+        .zvezda-logo-link {
+          height: 136px;
+        }
+      }
+      #zvezda-logo-3-social {
+        padding: 0 26px;
+        bottom: 0;
+        right: 0;
+        .social-btns {
+          padding: 0px;
+          margin: 0px;
+          li {
+            a {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+
+
+  //Футер
+  #zvezda-footer {
+    height: 149px;
+    & > .row {
+      padding: 20px 0 0 0;
+      border-top: 2pt solid rgb(114, 114, 115);
+    }
+    #zvezda-footer-left {
+      #zvezda-footer-left-contacts {
+        a {
+          color: gray;
+        }
+      }
+      #zvezda-footer-left-links{
+        #footer-kira-agency{
+
+          span{
+            &.logo{
+              width: 30%;
+            }
+            &.text{
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+    #zvezda-footer-middle {
+      .first-line-tite {
+        font-size: 0.5em;
+        margin-bottom: 2px;
+      }
+      & > ul {
+        li {
+          font-size: 0.5em;
+        }
+        &.first-line {
+          li {
+            margin-left: 0;
+            padding-left: 38px;
+            padding-top: 3px;
+            background-size: 36px auto;
+            min-height: 40px;
+            width: 25%;
+          }
+        }
+        &.second-line {
+          padding-top: 10px;
+          li {
+            height: 60px;
+            width: 25%;
+            &:first-child {
+              background-position: 42px -5px;
+              background-size: auto 70px;
+            }
+          }
+        }
+      }
+
+    }
+    #zvezda-footer-right {
+      #zvezda-footer-right-logo {
+        height: 58px;
+        width: 160px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: @screen-lg-min){
+  //Хедер
+  #zvezda-header-wrapper {
+    padding-bottom: 14px;
+    .region-header {
+      padding-top: 10px;
+      min-height: 26px;
+      #block-system-user-menu{
+        .menu {
+          li {
+            a {
+              padding: 5px;
+            }
+          }
+        }
+      }
+      margin-bottom: 10px;
+    }
+
+    #zvezda-header-left {
+      padding-left: 0px;
+      padding-top: 15px;
+      #zvezda-logo-1 {
+        padding-left: 15px;
+        font-size: 20px;
+        color: rgb(114, 114, 115);
+        line-height: 20px;
+        height: 20px;
+        margin-bottom: 9px;
+        margin-left: 14px;
+        letter-spacing: 0.6em;
+      }
+    }
+    #zvezda-header-right {
+      #zvezda-logo-2 {
+        width: 124px;
+        height: 41.7px;
+        right: 23px;
+      }
+    }
+
+    #zvezda-header-row {
+      height: 136px;
+      #zvezda-slider-wrapper {
+        img,
+        .simply-scroll-clip,
+        .simply-scroll-container,
+        li {
+          height: 100%;
+        }
+
+        li {
+          width: 222px;
+        }
+      }
+    }
+    #zvezda-logo-3 {
+      width: 326px;
+      z-index: 2;
+      left: 50%;
+      margin-left: -163px;
+      top: 0;
+      &.zvezda-logo-3 {
+        .zvezda-logo-link {
+          height: 136px;
+        }
+      }
+      #zvezda-logo-3-social {
+        padding: 0 26px;
+        bottom: 0;
+        right: 0;
+        .social-btns {
+          padding: 0px;
+          margin: 0px;
+          li {
+            a {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //Футер
+  #zvezda-footer {
+    height: 149px;
+    & > .row {
+      padding: 20px 0 0 0;
+      border-top: 2pt solid rgb(114, 114, 115);
+    }
+    #zvezda-footer-left {
+      #zvezda-footer-left-contacts {
+        a {
+          color: gray;
+        }
+      }
+    }
+    #zvezda-footer-middle {
+      .first-line-tite {
+        font-size: 0.5em;
+        margin-bottom: 2px;
+      }
+      & > ul {
+        li {
+          font-size: 0.5em;
+        }
+        &.first-line {
+          li {
+            margin-left: 0;
+            padding-left: 38px;
+            padding-top: 3px;
+            background-size: 36px auto;
+            min-height: 40px;
+            width: 25%;
+          }
+        }
+        &.second-line {
+          padding-top: 10px;
+          li {
+            height: 60px;
+            width: 20%;
+            &:first-child {
+              background-position: 42px -5px;
+              background-size: auto 70px;
+            }
+          }
+        }
+      }
+
+    }
+    #zvezda-footer-right {
+      #zvezda-footer-right-logo {
+        height: 58px;
+        width: 175px;
+        margin-left: 10px;
+      }
+      #yandex-metrika-informer{
+        margin: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+/*----   Cтуденты   ---------
+------   Хедер      ---------*/
+// Логотип
+  #logo-header-student {
+    background: rgba(0, 0, 0, 0) url("../../img/zvezda_student/logo_ZU.png") no-repeat scroll center center / 250px auto;
+    height: 140px;
+    a {
+
+      .student-logo-link {
+        height: 155px;
+        display: block;
+      }
+    }
+
+}
+
+
+// Социалки
+.social-social-student {
+        padding: 10px;
+        margin: 0px;
+        li {
+          display: inline-block;
+          padding-right: 32px;
+          a {
+            height: 42px;
+            width: 42px;
+            display:inline-block;
+            background-size: cover;
+            &.vk {
+              background-image: url('../../img/social/vk.png')
+
+            }
+            &.fb {
+              background-image: url('../../img/social/fb.png')
+            }
+            &.od {
+              background-image: url('../../img/social/od.png')
+            }
+            &.in {
+              background-image: url('../../img/social/in.png')
+            }
+            &.yt {
+              background-image: url('../../img/social/yt.png')
+            }
+            &.tw {
+              background-image: url('../../img/social/tw.png')
+            }
+          }
+        }
+      }
+
+// Социалки студенты для моб. версии
+@media (max-width: @screen-sm-max){
+.social-social-student {
+        padding: 10px;
+        margin: 0px;
+        li {
+          display: inline-block;
+          padding-right: 6px;
+          a {
+            height: 42px;
+            width: 42px;
+            display:inline-block;
+            background-size: cover;
+            &.vk {
+              background-image: url('../../img/social/vk.png')
+
+            }
+            &.fb {
+              background-image: url('../../img/social/fb.png')
+            }
+            &.od {
+              background-image: url('../../img/social/od.png')
+            }
+            &.in {
+              background-image: url('../../img/social/in.png')
+            }
+            &.yt {
+              background-image: url('../../img/social/yt.png')
+            }
+            &.tw {
+              background-image: url('../../img/social/tw.png')
+            }
+          }
+        }
+      }
+}
+
+
+@media (max-width: @screen-sm-max){
+
+    #zvezda-logo-cds {
+        background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/cds_logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+
+    }
+}
+
+
+
+// ЦДС
+#zvezda-header-right-student {
+
+        background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/cds_logo.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 70px;
+
+
+
+   #header-cds-text {
+          font-size: 11px;
+          font-weight: bold;
+          height: 120px;
+          padding-top: 7px;
+          width: 180px;
+   }
+
+   #header-cds-pic {
+        width:140px;
+        height:70px;
+
+   }
+  }
+
+
+
+// Меню раздела студенты
+#page-title-student {
+  color: #A11926;
+  font-family: "appleberry";
+  text-align: center;
+}
+// Полоска всероссийское творческое движение
+
+#pre-footer   {
+          height:60px;
+          background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_front/footer.png");
+          background-position: center;
+          background-size: 100% 100%;
+}
+
+#pre-footer-school   {
+          height:60px;
+          background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_school/Plashka_footer.png");
+          background-position: center;
+          background-size: 100% 100%;
+}
+ // Главная страница студентов
+#best-of-day {
+
+  .link_best_work{
+    width:240px;
+    height: 240px;
+
+  }
+ @media (min-width: @screen-md-min){
+
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/2016_zavershen_stud.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 400px;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 0px;
+    width: 400px;
+  }
+ @media (max-width: @screen-md-max){
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/2016_zavershen_stud.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+  }
+}
+
+#online-casting-students {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/studentka.png");
+    background-repeat: no-repeat;
+    background-size: 100px 150px;
+    width: 100px;
+    height: 150px;
+    margin-left: -160px;
+    margin-top: -60px;
+}
+
+#frontpage-student-left {
+    @media (min-width: @screen-lg-min) {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/pict_fon.png");
+    background-position: 75% center;
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+    height: 400px;
+    margin-bottom: 80px;
+  }
+
+    @media (max-width: @screen-md-max) {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/pict_fon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+  }
+
+
+}
+
+
+#online-casting-students-link {
+  @media (min-width: @screen-lg-min) {
+   background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/kasting_online.png");
+    background-repeat: no-repeat;
+    background-size: 100px 70px;
+    height: 100px;
+    margin-left: 300px;
+    margin-top: -400px;
+    cursor:pointer;
+  }
+
+    @media (max-width: @screen-md-max) {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/kasting_online.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 100px;
+    }
+
+
+}
+
+#send-work-student {
+    @media (min-width: @screen-lg-min) {
+      background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/otprav_rabotu.png");
+      background-repeat: no-repeat;
+      background-size: 90px auto;
+      height: 100px;
+      margin-left: 42px;
+      margin-top: -203px;
+      cursor:pointer;
+        }
+
+        @media (max-width: @screen-md-max) {
+     background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/otprav_rabotu.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 100px;
+    margin-top: 50px;
+      }
+
+
+}
+#send-work-student-pic {
+      background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_student/student.png");
+      background-repeat: no-repeat;
+      background-size: 90px auto;
+      height: 100px;
+      margin-left: 90px;
+      margin-top: -250px;
+}
+
+
+// Меню раздела школьники
+
+#school-menu-navigation {
+  li {
+
+
+      &:nth-child(1) {
+
+      }
+      &:nth-child(2) {
+
+      }
+      &:nth-child(3) {
+
+      }
+      &:nth-child(4) {
+
+      }
+      &:nth-child(5) {
+
+      }
+      &:nth-child(6) {
+
+      }
+      &:nth-child(7) {
+
+      }
+      &:nth-child(8) {
+
+            background-color: #01D3FE;
+          }
+  }
+
+  ul {
+
+  }
+}
+
+
+
+// Главная страница школьников
+#front-school-content-right {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_school/MAIN_Pict_n.png");
+    background-position: 100% top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 520px;
+}
+
+#front-school-content-otprav-rabotu {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_school/girl_1n.png");
+    background-repeat: no-repeat;
+    height: 180px;
+    margin-left: 45px;
+    margin-top: 0;
+    width: 110px;
+}
+#front-school-content-otprav-rabotu-link {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_school/otprav_rabotu.png");
+    background-position: 0 60%;
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    height: 180px;
+    margin-left: 70px;
+    width: 130px;
+    cursor: pointer;
+  }
+
+#front-school-content-socials {
+        width:340px ;
+}
+  .social-social-school {
+        padding: 10px;
+        margin: 0px;
+        li {
+          display: inline-block;
+          padding-right: 10px;
+          a {
+            height: 35px;
+            width: 35px;
+            display:inline-block;
+            background-size: cover;
+            &.vk {
+              background-image: url('../../img/social/vk.png')
+
+            }
+            &.fb {
+              background-image: url('../../img/social/fb.png')
+            }
+            &.od {
+              background-image: url('../../img/social/od.png')
+            }
+            &.in {
+              background-image: url('../../img/social/in.png')
+            }
+            &.yt {
+              background-image: url('../../img/social/yt.png')
+            }
+            &.tw {
+              background-image: url('../../img/social/tw.png')
+            }
+          }
+        }
+      }
+
+#front-school-content-gala-concert {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_school/boy_1n.png");
+    height: 239px;
+    margin-left: 110px;
+    width: 105px;
+}
+#front-school-content-gala-concert-link {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_school/Smotret_GalaConsert.png");
+    background-repeat: no-repeat;
+    background-size: 120px 60px;
+    height: 120px;
+    margin-left: 70px;
+    margin-top: 74px;
+    width: 120px;
+    cursor:pointer;
+}
+
+#front-school-content-star-vpered {
+        background-image: url("/sites/all/themes/zvezdaudachi2/img/2016_zavershen_deti.jpg");
+    background-position: center center;
+    background-size: 350px 400px;
+    background-repeat: no-repeat;
+    height: 400px;
+    margin-top: 85px;
+    cursor: pointer ;
+}
+
+
+.nominacii-link {
+  cursor : url("/sites/all/themes/zvezdaudachi2/img/zvezda_front/pointer.cur"), pointer;
+  display: inline-block;
+  position: relative;
+}
+
+
+.nominacii-link:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20%; top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+   }

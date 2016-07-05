@@ -1,0 +1,255 @@
+#zvezda-content-wrapper{
+  #zvezda-content{
+  
+    .work-page{
+      width: 87%;
+      z-index: 1;
+      margin: auto;
+      min-height: 300px;
+      &:after,
+      &:before{
+        width: 7%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        background-size: 100% auto ;
+        content: '_';
+        color:#ffffff;
+        z-index: 0;
+        background-repeat: repeat-y;
+      }
+      &:after{
+        right:0;
+        background-image: url('../../img/zvezda_school/pole_right.png');
+        background-position: right top;
+      }
+      &:before{
+        left:0;
+        background-image: url('../../img/zvezda_school/pole_left.png');
+        background-position: left top;
+      }
+      #content{
+        .star-kasting{
+           background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          display: inline-block;
+          height: 90px;
+          width: 49%;
+        }
+        .send_work{
+          background-image: url('../../img/send_work.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          display: inline-block;
+          height: 90px;
+          width: 49%;
+        }
+        
+        .star-kasting,
+        .send_work{
+          &:hover{
+            opacity: 0.5;
+            transition: opacity 0.3s  ease-out;
+          }
+        }
+        #page-title{
+          font-family: 'appleberry';
+          font-size: 2em;
+          text-align: center;
+        }
+      }
+    }
+    &.zvezda-content-color-1{
+      #page-title,
+      .a{
+        color:@color_1;
+      }
+    }
+    &.zvezda-content-color-2,
+    .a{
+      #page-title{
+        color:@color_2;
+      }
+    }
+    &.zvezda-content-color-3{
+      #page-title,
+      .a{
+        color:@color_3;
+      }
+    }
+    &.zvezda-content-color-4{
+      #page-title,
+      .a{
+        color:@color_4;
+      }
+    }
+    &.zvezda-content-color-5{
+      #page-title,
+      .a{
+        color:@color_5;
+      }
+    }
+    &.zvezda-content-color-6{
+      #page-title,
+      .a{
+        color:@color_6;
+      }
+    }
+    &.zvezda-content-color-7{
+      #page-title,
+      .a{
+        color:@color_7;
+      }
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min){
+  #zvezda-content-wrapper{
+    #zvezda-content{
+      .work-page{
+        &:after,
+        &:before{
+          width: 45px;
+        }
+        #content{
+          .star-kasting,
+          .send_work{
+            height: 130px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: @screen-md-min){
+
+  #zvezda-content-wrapper{
+    #zvezda-content{
+      .work-page{
+        width: 87%;
+        min-height: 300px;
+        &:after,
+        &:before{
+          width: 7%;
+          height: 100%;
+          background-size: 100% auto ;
+        }
+        #content{
+          position: relative;
+          .star-kasting{
+            height: 90px;
+            width: 90px;
+            left: -95px;
+            top: -25px;
+          }
+          .star-kasting{
+             background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: block;
+            height: 90px;
+            width: 90px;
+            left: -95px;
+            top: -25px;
+            position: absolute;
+            z-index: 2;
+          }
+          .send_work{
+          background-image: url('../../img/send_work.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: block;
+            height: 90px;
+            width: 90px;
+            right: -94px;
+            top: 62px;
+            position: absolute;
+            z-index: 2;
+          }
+          #page-title{
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+@media (min-width: @screen-lg-min){
+
+
+}
+
+
+
+
+#zvezda-content-wrapper{
+  #zvezda-content-student{
+  
+      #content{
+        
+        .star-kasting-student{
+          background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+                background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: block;
+          height: 90px;
+          left: -95px;
+          position: absolute;
+          top: -25px;
+          width: 90px;
+          z-index: 2;
+        }
+        .send_work-student{
+
+            @media (min-width: @screen-lg-min) { 
+         background-image: url('../../img/zvezda_student/Otprav_RABOTU.png');
+        bbackground-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: block;
+          height: 90px;
+          position: absolute;
+          right: -94px;
+          top: 62px;
+          width: 90px;
+          z-index: 2;
+
+            }
+
+            @media (max-width: @screen-md-max) { 
+          background-image: url('../../img/zvezda_student/Otprav_RABOTU.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 90px;
+        position: absolute;
+        top: 140px;
+        width: 90px;
+        z-index: 2;
+        }
+      }
+        .star-kasting-student,
+        .send_work-student{
+          &:hover{
+            opacity: 0.5;
+            transition: opacity 0.3s  ease-out;
+          }
+        }
+        
+      }
+    }
+    
+  }

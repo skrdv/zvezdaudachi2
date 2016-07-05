@@ -1,0 +1,42 @@
+#cboxLoadedContent{
+  overflow: hidden!important;
+  div{
+    height: 100%;
+  }
+  .carousel-colorbox-inline-item{
+    height: 100%;
+    width:100%;
+    text-align: center;
+    img{
+      max-height: 100%;
+      max-width:100%;
+    }
+    &.item-youtube,
+    &.item-video-vk{
+      iframe{
+        width: 1000px;
+        height: 800px;
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    &.item-video{
+      video{
+        max-height: 100%;
+        max-width:100%;
+      }
+    }
+  }
+  #prodpreview,
+  #prodpreview>div,
+  #prodpreview>div>.field,
+  #prodpreview>div>.field>.field-items,
+  #prodpreview>div>.field>.field-items>.field-item,
+  #prodpreview>div>.field>.field-items>.field-item>.file,
+  #prodpreview>div>.field>.field-items>.field-item>.file>.content{
+    height: 100%;
+  }
+  .content{
+    text-align: center;
+  }
+}

@@ -1,0 +1,400 @@
+#mobile-menu-btn-toggle-wrapper {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #mobile-menu-hide-btn{
+    text-align: center;
+    background-color: lightgray;
+    padding: 15px 0;
+    display: none;
+    color: gray;
+    cursor: pointer;
+    &:hover{
+      background-color:gray;
+      color:lightgray;
+    }
+
+  }
+#school-menu-navigation {
+
+
+  .region-navigation{
+  clear: both;
+
+    
+  .block-menu{
+    display: none;
+    font-family: 'appleberry';
+    & > ul li a{
+      text-decoration: none;
+      display: block;
+      color: #ffffff;
+      font-size: 1.8em;
+      height: 40px;
+      line-height: 40px;
+      background: none;
+    }
+
+    //первый уровень
+    & > ul {
+      padding: 0;
+      margin: 0;
+      & > li {
+        &:hover {
+          transition: background-color 0.3s ease-out;
+        }
+        &:nth-child(1) {
+          background-color: @color_1;
+          padding-left: 15px;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_1, 20%);
+          }
+        }
+        &:nth-child(2) {
+          background-color: @color_2;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_2, 20%);
+          }
+        }
+        &:nth-child(3) {
+          background-color: @color_3;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_3, 20%);
+          }
+        }
+        &:nth-child(4) {
+          background-color: @color_4;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_4, 20%);
+          }
+        }
+        &:nth-child(5) {
+          background-color: @color_5;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_5, 20%);
+          }
+        }
+        &:nth-child(6) {
+          background-color: @color_6;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_6, 20%);
+          }
+        }
+        &:nth-child(7) {
+          background-color: @color_7;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_7, 20%);
+          }
+        }
+        &:nth-child(8) {
+          background-color: @color_8;
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_8, 20%);
+          }
+        }
+        & > a {
+          padding: 0 10px 0 10px;
+          text-align: center;
+
+        }
+      }
+    }
+
+    //второй уровень
+    & > ul > li {
+      & > .submenu {
+        li {
+          border-top: 1px  dashed #d3d3d3;
+          padding: 2px 10px;
+          a{
+            text-align: center;
+          }
+        }
+      }
+      &:nth-child(1) .submenu {
+        background-color: @color_1;
+        li{
+          border-color: lighten(@color_1,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_1, 20%);
+          }
+        }
+      }
+      &:nth-child(2) .submenu {
+        background-color: @color_2;
+        li{
+          border-color: lighten(@color_2,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_2, 20%);
+          }
+        }
+      }
+      &:nth-child(3) .submenu {
+        background-color: @color_3;
+        li{
+          border-color: lighten(@color_3,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_3, 20%);
+          }
+        }
+      }
+      &:nth-child(4) .submenu {
+        background-color: @color_4;
+        li{
+          border-color: lighten(@color_4,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_4, 20%);
+          }
+        }
+      }
+      &:nth-child(5) .submenu {
+        background-color: @color_5;
+        li{
+          border-color: lighten(@color_5,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_5, 20%);
+          }
+        }
+      }
+      &:nth-child(6) .submenu {
+        background-color: @color_6;
+        li{
+          border-color: lighten(@color_6,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_6, 20%);
+          }
+        }
+      }
+      &:nth-child(7) .submenu {
+        background-color: @color_7;
+        li{
+          border-color: lighten(@color_7,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_7, 20%);
+          }
+        }
+      }
+        &:nth-child(8) .submenu {
+        background-color: @color_8;
+        li{
+          border-color: lighten(@color_8,20%);
+          &:hover,
+          &:focus,
+          &:active{
+            background-color: darken(@color_8, 20%);
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: @screen-sm-min) {
+    .block-menu{
+      display: inherit;
+      font-family: 'appleberry';
+      & > ul li a{
+        text-decoration: none;
+        display: block;
+        color: #ffffff;
+        font-size:1em;
+        height: 27px;
+        line-height: 27px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      //первый уровень
+      & > ul {
+        padding: 0;
+        margin: 0;
+        & > li {
+          float: left;
+          position: relative;
+          &:nth-child(1) {
+            width: 107px;
+            padding-left: 15px;
+          }
+          &:nth-child(2) {
+            width: 110px;
+          }
+          &:nth-child(3) {
+            width: 90px;
+          }
+          &:nth-child(4) {
+            width: 100px;
+          }
+          &:nth-child(5) {
+            width: 90px;
+          }
+          &:nth-child(6) {
+            width: 90px;
+          }
+          &:nth-child(7) {
+            width: 80px;
+          }
+          & > a {
+            padding: 0 10px 0 10px;
+            text-align: center;
+          }
+          .submenu {
+            position: absolute;
+          }
+        }
+      }
+      //второй уровень
+      & > ul > li {
+        &:hover {
+          & > .submenu {
+            left: 0px;
+          }
+        }
+        & > .submenu {
+          z-index: 30;
+          left: -9999px;
+          li {
+            padding: 2px 10px;
+            border: none;
+            a{
+              text-align: left;
+            }
+          }
+        }
+        &:nth-child(2) .submenu {
+          min-width: 120px;
+        }
+        &:nth-child(4) .submenu {
+          min-width: 117px;
+        }
+      }
+    }
+
+  }
+
+
+
+  @media (min-width: @screen-md-min) {
+
+    .block-menu{
+      //первый уровень
+      & > ul {
+        & > li {
+          &:nth-child(1) {
+            width: 107px;
+            padding-left: 15px;
+          }
+          &:nth-child(2) {
+            width: 110px;
+          }
+          &:nth-child(3) {
+            width: 90px;
+          }
+          &:nth-child(4) {
+            width: 100px;
+          }
+          &:nth-child(5) {
+            margin-left: 326px;
+            width: 90px;
+          }
+          &:nth-child(6) {
+            width: 90px;
+          }
+          &:nth-child(7) {
+            width: 80px;
+          }
+        }
+      }
+      //второй уровень
+      & > ul > li {
+        &:nth-child(2) .submenu {
+          min-width: 120px;
+        }
+        &:nth-child(4) .submenu {
+          min-width: 117px;
+        }
+      }
+    }
+  }
+
+
+  @media (min-width: @screen-lg-min) {
+    .block-menu{
+      //первый уровень
+      & > ul {
+        & > li {
+          &:nth-child(1) {
+            width: 130px;
+          }
+          &:nth-child(2) {
+            width: 120px;
+          }
+          &:nth-child(3) {
+            width: 100px;
+          }
+          &:nth-child(4) {
+            width: 117px;
+          }
+          &:nth-child(5) {
+            margin-left: 326px;
+            width: 96px;
+          }
+          &:nth-child(6) {
+            width: 106px;
+          }
+          &:nth-child(7) {
+            width: 86px;
+          }
+        }
+      }
+      //второй уровень
+      & > ul > li {
+        &:nth-child(2) .submenu {
+          min-width: 120px;
+        }
+        &:nth-child(4) .submenu {
+          min-width: 117px;
+        }
+      }
+    }
+  }
+}
+}

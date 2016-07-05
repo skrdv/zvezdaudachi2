@@ -1,0 +1,81 @@
+name = Bootstrap Sub-theme
+description = A Bootstrap Sub-theme.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[help]           = 'Help'
+regions[navigation]     = 'Навигация'
+;regions[highlighted]    = 'Highlighted'
+regions[header]         = 'Шапка сайта'
+regions[sidebar_first]  = 'Регион над контентом'
+regions[sidebar_second] = 'Регион под контентом'
+regions[page_top]       = 'Регион над страницей'
+regions[page_bottom]    = 'Регион под страницей'
+regions[content]        = 'Контент'
+regions[footer]         = 'Футер'
+
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+#stylesheets[all][] = vendor/bootstrap/less/bootstrap.less
+#stylesheets[all][] = less/bootstrap.less
+stylesheets[all][] = less/style.less
+stylesheets[all][] = vendor/simplyscroll/jquery.simplyscroll.css
+
+; For information on choosing the desired method, please read the Drupal
+; Bootstrap sub-theme "how-to" documentation:
+; https://drupal.org/node/1978010
+
+; ;----------------------------------
+; ; METHOD 1: Bootstrap Source Files
+; ;----------------------------------
+;
+; ;;;;;;;;;;;;;;;;;;;;;
+; ;; Scripts
+; ;;;;;;;;;;;;;;;;;;;;;
+;
+scripts[] = 'vendor/bootstrap/dist/js/bootstrap.js'
+scripts[] = 'js/bootstrapNoConflict.js'
+scripts[] = 'vendor/TouchSwipe-Jquery-Plugin/jquery.touchSwipe.min.js'
+scripts[] = 'vendor/simplyscroll/jquery.simplyscroll.js'
+scripts[] = 'js/myColorbox.js'
+scripts[] = 'js/views-view--news.js'
+scripts[] = 'js/page--konkurs.js'
+scripts[] = 'js/html.js'
+scripts[] = 'js/edit-field-finalist.js'
+
+
+
+#scripts[] = 'vendor/bootstrap/js/affix.js'
+
+#scripts[] = 'vendor/bootstrap/js/alert.js'
+#scripts[] = 'vendor/bootstrap/js/button.js'
+#scripts[] = 'vendor/bootstrap/js/carousel.js'
+#scripts[] = 'vendor/bootstrap/js/collapse.js'
+#scripts[] = 'vendor/bootstrap/js/dropdown.js'
+#scripts[] = 'vendor/bootstrap/js/modal.js'
+#scripts[] = 'vendor/bootstrap/js/tooltip.js'
+#scripts[] = 'vendor/bootstrap/js/popover.js'
+#scripts[] = 'vendor/bootstrap/js/scrollspy.js'
+#scripts[] = 'vendor/bootstrap/js/tab.js'
+#scripts[] = 'vendor/bootstrap/js/transition.js'
+;
+; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
+settings[bootstrap_cdn] = ''
+
+
+; ;-------------------------
+; ; METHOD 2: Bootstrap CDN
+; ;-------------------------
+;
+; Method 2 uses BootstrapCDN, the only thing you might need to provide here
+; is overrides to Bootstrap theme settings. Copy them here from the base theme
+; to override.

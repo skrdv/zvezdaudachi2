@@ -1,0 +1,35 @@
+.likebtn-wrapper{
+  .likebtn-button{
+    border: none!important;
+    background: none!important;
+    .likebtn-label{
+      color: @color_4;
+      font-family: 'appleberry';
+      font-size: 1.2em;
+      padding-right: 0;
+      line-height: 35px;
+    }
+    .lb-like-icon{
+      background-image:url('../../img/like-btn.png');
+    }
+    .lb-count{
+      border: none;
+      color: #ffffff;
+      line-height: 35px;
+      font-family: 'appleberry';
+      background-image: url('../../img/star_color_4.png');
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      padding-left: 1px;
+    }
+    &:hover{
+      .likebtn-label{
+        color: darken(@color_4,10%);
+      }
+    }
+  }
+}

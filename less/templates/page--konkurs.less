@@ -1,0 +1,2102 @@
+#zvezda-content-wrapper{
+  #zvezda-content-student{
+    #page--konkurs.work-page{ 
+      #page-title{
+        text-align: center;
+        font-family:'intro';
+        font-size: 1.3em;
+        color:@color_gray_1;
+      }
+      //Форма сортировки
+      #views-exposed-form--konkurs{
+      	label {
+      		font-family:"appleberry" !important;
+      	}
+        #konkurs-filters-submit{
+          background: url('../../img/menu_primenit.jpg');
+          display: inline-block;
+          width: 144px;
+          height: 34px;
+          line-height: 34px;
+          margin-top: 25px;
+          cursor:pointer;
+          &:hover{
+            opacity:0.6;
+            transition: opacity 0.3s  ease-out;
+          }
+        }
+        .filter-field_kat{
+          .form-type-select .form-item>div:not(:last-child)::after{
+            content: "|";
+            color:@color_gray_1;
+          }
+          .form-item{
+            text-align: center;
+            &>div{
+              display: inline-block;
+            }
+            a{
+              color:@color_gray_1;
+              &:hover,
+              &.active{
+                color:@color_4;
+                transition: color 0.3s  ease-out;
+              }
+            }
+          }
+        }
+        #filter-field_nominaciya{
+          #konkurs-nominaciya-toggle-button{
+            margin-bottom: 20px;
+          }
+          #konkurs-nominaciya-toggle{
+            margin-bottom: 20px;
+            height: 200px;
+            overflow-y: scroll;
+          }
+          .filter-field_nominaciya-title{
+            font-family: 'appleberry';
+            font-size: 1.3em;
+            color:@color_4;
+          }
+          .form-type-bef-link{
+            border-bottom: 1px solid @color_gray_1;
+            font-family: 'appleberry';
+            text-transform: uppercase;
+            padding: 0;
+            margin: 10px 0;
+            a{
+              color:@color_gray_1;
+              text-decoration: none;
+              &:hover,
+              &.active{
+                color:@color_4;
+                transition: color 0.3s  ease-out;
+              }
+            }
+          }
+        }
+        #selected_filters{
+          font-family: 'appleberry';
+          color:@color_gray_1;
+        }
+        .send_work{
+          background-image: url('../../img/zvezda_student/Otprav_RABOTU.png');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: block;
+          width: 100%;
+          height: 100px;
+          position: inherit;
+          bottom: 75px;
+          left: auto;
+          right: auto;
+          top: auto;
+          bottom: auto;
+        }
+        .star-kasting-wrapper{
+          position: relative;
+          .star-kasting{
+             background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: block;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            left: -45%;
+          }
+        }
+        .send_work,
+        .star-kasting{
+          &:hover{
+            opacity:0.8;
+            transition: opacity 0.3s  ease-out;
+          }
+        }
+
+        .form-item-contestfilter,
+        .form-item-sort-by,
+        .form-item-field-gorod-tid{
+          background-repeat: no-repeat;
+          input,
+          select{
+            border: none;
+            box-shadow:none;
+            background: none;
+            margin: 0;
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
+          }
+        }
+        .form-item-contestfilter,
+        .form-item-field-gorod-tid{
+          background-image: url(../../img/filter-konkurs-input-background.jpg);
+          input{
+            padding-left: 22px;
+            padding-right: 5px;
+          }
+        }
+
+        .form-item-contestfilter{
+          background-position: left center;
+          background-size: 100% 100%;
+          height: 34px;
+        }
+
+        position: relative;
+        .form-item-sort-by{
+          background-position: left bottom;
+          background-image: url(../../img/filter-konkurs-input-background-arrow.jpg);
+          background-size: 100% 34px;
+          overflow: hidden;
+          select{
+            padding-right: 10%;
+            padding-left:5px;
+            width: 109%;
+            cursor: pointer;
+          }
+
+          .glyphicon-chevron-down{
+            position: absolute;
+            right:0;
+            padding-right: 22px;
+            padding-top: 35px;
+            font-size: 0.5em;
+          }
+        }
+
+        .form-item-field-gorod-tid{
+          background-position: left bottom;
+          background-size: 100% 34px;
+          .dropdown-menu li.active a{
+            background: @color_4 !important;
+          }
+        }
+      }
+
+      //Представление
+      .views-rows-wrapper{
+        min-height: 800px;
+        .views-row{
+          .node--view--konkurs{
+            border:1px solid @color_gray_1;
+            border-radius: 2px;
+            margin: 5px 0;
+            padding: 5px 0;
+            header{
+              padding:0 10px;
+              height: 62px;
+              .field-title{
+                overflow: hidden;
+                height: 23px;
+                a{
+                  color:@color_4;
+                  text-transform: capitalize;
+                }
+              }
+            }
+            section{
+              height: 237px;
+              .carousel{
+                height: 237px;
+                overflow: hidden;
+                .carousel-control{
+                  &:hover{
+                    &.right{
+                      color:@color_1;
+                      transition:color 0.3s  ease-out;
+                    }
+                    &.left{
+                      color:@color_3;
+                      transition:color 0.3s  ease-out;
+                    }
+                  }
+                }
+                .carousel-indicators{
+                  li{
+                    &:hover{
+                      &:nth-child(1){background-color: @color_1; border-color:darken(@color_1,10%);}
+                      &:nth-child(2){background-color: @color_2; border-color:darken(@color_2,10%);}
+                      &:nth-child(3){background-color: @color_3; border-color:darken(@color_3,10%);}
+                      &:nth-child(4){background-color: @color_4; border-color:darken(@color_4,10%);}
+                      &:nth-child(5){background-color: @color_5; border-color:darken(@color_5,10%);}
+                      &:nth-child(6){background-color: @color_6; border-color:darken(@color_6,10%);}
+                    }
+                  }
+                }
+                .item{
+                  height: 237px;
+                  overflow: hidden;
+                  img,
+                  embed{
+                    min-width: 100%;
+                    min-height: 100%;
+                    height: auto;
+                  }
+                  a{
+                    height: 100%;
+                    display: block;
+                    &:hover{
+                      opacity:0.7;
+                      transition: opacity 0.3s  ease-out;
+                    }
+                  }
+                  .play{
+                    z-index: 1;
+                    color: #ffffff;
+                    position: absolute;
+                    line-height: 237px;
+                    font-size: 3em;
+                    text-align: center;
+                    width: 100%;
+                    &:hover{
+                      color: @color_2;
+                      transition:color 0.3s  ease-out;
+                    }
+                  }
+                  &.item-type-audio{
+                    text-align: center;
+                    background-image:url(../../img/nota.png) ;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    audio{
+                      margin-top: 103px;
+                      width: 65%;
+                    }
+                  }
+                  &.item-type-youtube{
+                    position: relative;
+                  }
+
+                  &.item-type-video-vk{
+                    a.carousel-colorbox-inline {
+                      position: relative;
+                      display: block;
+                      height: 100%;
+                      .play{
+                        z-index: 1;
+                        color: #ffffff;
+                        position: absolute;
+                        line-height: 237px;
+                        font-size: 3em;
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+                        &:hover{
+                          color: @color_2;
+                          transition:color 0.3s  ease-out;
+                        }
+                      }
+                    }
+                  }
+
+                  &.item-type-video{
+                    .data{
+                      padding: 10px;
+                      height: 90%;
+                      width: 90%;
+                      text-align: center
+                    }
+                    video{
+                      height: 100%;
+                      width: 100%;
+                      margin-left: auto;
+                    }
+                    a{
+                      background-image: url('../../img/video-icon.jpg');
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: 100px 100px;
+                    }
+                  }
+                  &.item-type-word{
+                    a{
+                      background-image: url('../../img/word-doc-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-vkontakte-link{
+                    a{
+                      background-image: url('../../img/vkontakte-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-other{
+                    a{
+                      background-image: url('../../img/download-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-pdf{
+                    a{
+                      background-image: url('../../img/pdf-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-ppt{
+                    a{
+                      background-image: url('../../img/ppt-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-vkontakte{
+                    position: relative;
+                    .overlay{
+                      position: absolute;
+                      height: 100%;
+                      width: 100%;
+                      top: 0;
+                      left: 0;
+                    }
+                    iframe{
+                      width: 100%!important;
+                      height: 112%!important;
+                    }
+                  }
+                }
+              }
+            }
+            footer{
+              padding:5px 10px;
+              .likebtn-wrapper{
+                float: right;
+              }
+            }
+          }
+        }
+      }
+      .pagination{
+        li{
+          &.active  a{
+            background-color: @color_4;
+            border-color:@color_4;
+            color: #ffffff;
+          }
+          a{color: @color_4;}
+        }
+      }
+    }
+  }
+  .field_zagruzka{
+    text-align:center;
+    margin-top: 10px;
+  }
+}
+
+
+@media (min-width: @screen-sm-min){
+  #zvezda-content-wrapper{
+    #zvezda-content-student{
+      #page--konkurs.work-page{
+        #page-title{
+          text-align: center;
+          font-family:'intro';
+          font-size: 1.3em;
+          color:@color_gray_1;
+        }
+        //Форма сортировки
+        #views-exposed-form--konkurs{
+          #konkurs-filters-submit{
+            background: url('../../img/menu_primenit.jpg');
+            display: inline-block;
+            width: 144px;
+            height: 34px;
+            line-height: 34px;
+            margin-top: 25px;
+            cursor:pointer;
+            &:hover{
+              opacity:0.6;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+          .filter-field_kat{
+            .form-type-select .form-item>div:not(:last-child)::after{
+              content: "|";
+              color:@color_gray_1;
+            }
+            .form-item{
+              text-align: center;
+              &>div{
+                display: inline-block;
+              }
+              a{
+                color:@color_gray_1;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+              .bef-select-as-links{
+                margin-left: 34%;
+              }
+            }
+          }
+          #filter-field_nominaciya{
+            .filter-field_nominaciya-title{
+              font-family: 'appleberry';
+              font-size: 1.3em;
+              color:@color_4;
+            }
+            #konkurs-nominaciya-toggle{
+              height: inherit;
+              overflow: inherit;
+            }
+            .form-type-bef-link{
+              border-bottom: 1px solid @color_gray_1;
+              font-family: 'appleberry';
+              text-transform: uppercase;
+              padding: 0;
+              margin: 10px 0;
+              a{
+                color:@color_gray_1;
+                text-decoration: none;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+            }
+          }
+          #selected_filters{
+            font-family: 'appleberry';
+            color:@color_gray_1;
+          }
+          .send_work{
+            background-image:url('../../img/STAR_sent_work.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 100%;
+            height: 100px;
+            position: inherit;
+            bottom: 75px;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+          }
+          .star-kasting-wrapper{
+            position: relative;
+            .star-kasting{
+              background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              display: block;
+              height: 80px;
+              width: 80px;
+              position: absolute;
+              left: -45%;
+            }
+          }
+          .send_work,
+          .star-kasting{
+            &:hover{
+              opacity:0.8;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+
+          .form-item-contestfilter,
+          .form-item-sort-by,
+          .form-item-field-gorod-tid{
+            background-repeat: no-repeat;
+            input,
+            select{
+              border: none;
+              box-shadow:none;
+              background: none;
+              margin: 0;
+              -webkit-appearance: none;
+              -moz-appearance:    none;
+              appearance:         none;
+            }
+          }
+          .form-item-contestfilter,
+          .form-item-field-gorod-tid{
+            background-image: url(../../img/filter-konkurs-input-background.jpg);
+            input{
+              padding-left: 22px;
+              padding-right: 5px;
+            }
+          }
+
+          .form-item-contestfilter{
+            background-position: left center;
+            background-size: 100% 100%;
+            height: 34px;
+          }
+
+          position: relative;
+          .form-item-sort-by{
+            background-position: left bottom;
+            background-image: url(../../img/filter-konkurs-input-background-arrow.jpg);
+            background-size: 100% 34px;
+            overflow: hidden;
+            select{
+              padding-right: 10%;
+              padding-left:5px;
+              width: 109%;
+              cursor: pointer;
+            }
+
+            .glyphicon-chevron-down{
+              position: absolute;
+              right:0;
+              padding-right: 22px;
+              padding-top: 35px;
+              font-size: 0.5em;
+            }
+          }
+
+          .form-item-field-gorod-tid{
+            background-position: left bottom;
+            background-size: 100% 34px;
+            .dropdown-menu li.active a{
+              background: @color_4 !important;
+            }
+          }
+        }
+
+        //Представление
+        .views-rows-wrapper{
+          min-height: 800px;
+          .views-row{
+            .node--view--konkurs{
+              border:1px solid @color_gray_1;
+              border-radius: 2px;
+              margin: 5px 0;
+              padding: 5px 0;
+              header{
+                padding:0 10px;
+                height: 62px;
+                .field-title{
+                  overflow: hidden;
+                  height: 23px;
+                  a{
+                    color:@color_4;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              section{
+                height: 237px;
+                .carousel{
+                  height: 237px;
+                  overflow: hidden;
+                  .carousel-control{
+                    &:hover{
+                      &.right{
+                        color:@color_1;
+                        transition:color 0.3s  ease-out;
+                      }
+                      &.left{
+                        color:@color_3;
+                        transition:color 0.3s  ease-out;
+                      }
+                    }
+                  }
+                  .carousel-indicators{
+                    li{
+                      &:hover{
+                        &:nth-child(1){background-color: @color_1; border-color:darken(@color_1,10%);}
+                        &:nth-child(2){background-color: @color_2; border-color:darken(@color_2,10%);}
+                        &:nth-child(3){background-color: @color_3; border-color:darken(@color_3,10%);}
+                        &:nth-child(4){background-color: @color_4; border-color:darken(@color_4,10%);}
+                        &:nth-child(5){background-color: @color_5; border-color:darken(@color_5,10%);}
+                        &:nth-child(6){background-color: @color_6; border-color:darken(@color_6,10%);}
+                      }
+                    }
+                  }
+                  .item{
+                    height: 237px;
+                    overflow: hidden;
+                    img,
+                    embed{
+                      min-width: 100%;
+                      min-height: 100%;
+                      height: auto;
+                    }
+                    a{
+                      height: 100%;
+                      display: block;
+                      &:hover{
+                        opacity:0.7;
+                        transition: opacity 0.3s  ease-out;
+                      }
+                    }
+                    &.item-type-audio{
+                      text-align: center;
+                      background-image:url(../../img/nota.png) ;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      audio{
+                        margin-top: 103px;
+                        width: 65%;
+                      }
+                    }
+                    &.item-type-youtube{
+                      position: relative;
+                      .play{
+                        z-index: 1;
+                        color: #ffffff;
+                        position: absolute;
+                        line-height: 237px;
+                        font-size: 3em;
+                        text-align: center;
+                        width: 100%;
+                        &:hover{
+                          color: @color_2;
+                          transition:color 0.3s  ease-out;
+                        }
+                      }
+                    }
+                    &.item-type-video{
+                      .data{
+                        padding: 10px;
+                        height: 90%;
+                        width: 90%;
+                        text-align: center
+                      }
+                      video{
+                        height: 100%;
+                        width: 100%;
+                        margin-left: auto;
+                      }
+                      a{
+                        background-image: url('../../img/video-icon.jpg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100px 100px;
+                      }
+                    }
+                    &.item-type-word{
+                      a{
+                        background-image: url('../../img/word-doc-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-vkontakte-link{
+                      a{
+                        background-image: url('../../img/vkontakte-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-other{
+                      a{
+                        background-image: url('../../img/download-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-pdf{
+                      a{
+                        background-image: url('../../img/pdf-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-ppt{
+                      a{
+                        background-image: url('../../img/ppt-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-vkontakte{
+                      position: relative;
+                      .overlay{
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                      }
+                      iframe{
+                        width: 100%!important;
+                        height: 112%!important;
+                      }
+                    }
+                  }
+                }
+              }
+              footer{
+                height: 69px;
+                padding:5px 10px;
+                .likebtn-wrapper{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+        .pagination{
+          li{
+            &.active  a{
+              background-color: @color_4;
+              border-color:@color_4;
+              color: #ffffff;
+            }
+            a{color: @color_4;}
+          }
+        }
+      }
+    }
+    .field_zagruzka{
+      text-align:center;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+
+@media (min-width: @screen-md-min){
+  #zvezda-content-wrapper{
+    #zvezda-content-student{
+      #page--konkurs.work-page{
+        #page-title{
+          text-align: center;
+          font-family:'intro';
+          font-size: 1.3em;
+          color:@color_gray_1;
+        }
+        //Форма сортировки
+        #views-exposed-form--konkurs{
+          #konkurs-filters-submit{
+            background: url('../../img/menu_primenit.jpg');
+            display: inline-block;
+            width: 144px;
+            height: 34px;
+            line-height: 34px;
+            margin-top: 25px;
+            cursor:pointer;
+            &:hover{
+              opacity:0.6;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+          .filter-field_kat{
+            .form-type-select .form-item>div:not(:last-child)::after{
+              content: "|";
+              color:@color_gray_1;
+            }
+            .form-item{
+              text-align: center;
+              &>div{
+                display: inline-block;
+              }
+              a{
+                color:@color_gray_1;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+              .bef-select-as-links{
+                margin-left: 34%;
+              }
+            }
+          }
+          #filter-field_nominaciya{
+            .filter-field_nominaciya-title{
+              font-family: 'appleberry';
+              font-size: 1.3em;
+              color:@color_4;
+            }
+            .form-type-bef-link{
+              border-bottom: 1px solid @color_gray_1;
+              font-family: 'appleberry';
+              text-transform: uppercase;
+              padding: 0;
+              margin: 10px 0;
+              a{
+                color:@color_gray_1;
+                text-decoration: none;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+            }
+          }
+          #selected_filters{
+            font-family: 'appleberry';
+            color:@color_gray_1;
+          }
+          .send_work{
+              background-image: url('../../img/zvezda_student/Otprav_RABOTU.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 100%;
+            height: 100px;
+            position: inherit;
+            bottom: 75px;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+          }
+          .star-kasting-wrapper{
+            position: relative;
+            .star-kasting{
+              background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              display: block;
+              height: 80px;
+              width: 80px;
+              position: absolute;
+              left: -45%;
+            }
+          }
+          .send_work,
+          .star-kasting{
+            &:hover{
+              opacity:0.8;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+
+          .form-item-contestfilter,
+          .form-item-sort-by,
+          .form-item-field-gorod-tid{
+            background-repeat: no-repeat;
+            input,
+            select{
+              border: none;
+              box-shadow:none;
+              background: none;
+              margin: 0;
+              -webkit-appearance: none;
+              -moz-appearance:    none;
+              appearance:         none;
+            }
+          }
+          .form-item-contestfilter,
+          .form-item-field-gorod-tid{
+            background-image: url(../../img/filter-konkurs-input-background.jpg);
+            input{
+              padding-left: 22px;
+              padding-right: 5px;
+            }
+          }
+
+          .form-item-contestfilter{
+            background-position: left center;
+            background-size: 100% 100%;
+            height: 34px;
+          }
+
+          position: relative;
+          .form-item-sort-by{
+            background-position: left bottom;
+            background-image: url(../../img/filter-konkurs-input-background-arrow.jpg);
+            background-size: 100% 34px;
+            overflow: hidden;
+            select{
+              padding-right: 10%;
+              padding-left:5px;
+              width: 109%;
+              cursor: pointer;
+            }
+
+            .glyphicon-chevron-down{
+              position: absolute;
+              right:0;
+              padding-right: 22px;
+              padding-top: 35px;
+              font-size: 0.5em;
+            }
+          }
+
+          .form-item-field-gorod-tid{
+            background-position: left bottom;
+            background-size: 100% 34px;
+            .dropdown-menu li.active a{
+              background: @color_4 !important;
+            }
+          }
+        }
+        .views-filters-wrapper{
+          height: 200px;
+          overflow: visible;
+          &>div,
+          form{
+            height: 100%;
+            overflow: visible;
+          }
+        }
+
+        //Представление
+        .views-rows-wrapper{
+          min-height: 800px;
+          .views-row{
+            .node--view--konkurs{
+              border:1px solid @color_gray_1;
+              border-radius: 2px;
+              margin: 5px 0;
+              padding: 5px 0;
+              header{
+                padding:0 10px;
+                height: 62px;
+                .field-title{
+                  overflow: hidden;
+                  height: 23px;
+                  a{
+                    color:@color_4;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              section{
+                height: 237px;
+                .carousel{
+                  height: 237px;
+                  overflow: hidden;
+                  .carousel-control{
+                    &:hover{
+                      &.right{
+                        color:@color_1;
+                        transition:color 0.3s  ease-out;
+                      }
+                      &.left{
+                        color:@color_3;
+                        transition:color 0.3s  ease-out;
+                      }
+                    }
+                  }
+                  .item{
+                    height: 237px;
+                    overflow: hidden;
+                    img,
+                    embed{
+                      min-width: 100%;
+                      min-height: 100%;
+                      height: auto;
+                    }
+                    a{
+                      height: 100%;
+                      display: block;
+                      &:hover{
+                        opacity:0.7;
+                        transition: opacity 0.3s  ease-out;
+                      }
+                    }
+                  }
+                }
+              }
+              footer{
+                height: 69px;
+                padding:5px 10px;
+                .likebtn-wrapper{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+        .pagination{
+          li{
+            &.active  a{
+              background-color: @color_4;
+              border-color:@color_4;
+              color: #ffffff;
+            }
+            a{color: @color_4;}
+          }
+        }
+      }
+    }
+    .field_zagruzka{
+      text-align:center;
+      margin-top: 10px;
+    }
+  }
+
+}
+
+
+// Школьники
+
+
+
+#zvezda-content-wrapper{
+  #zvezda-content{
+    #page--konkurs.work-page{ 
+      #page-title{
+        text-align: center;
+        font-family:'intro';
+        font-size: 1.3em;
+        color:@color_gray_1;
+      }
+      //Форма сортировки
+      #views-exposed-form--konkurs{
+      	label {
+      		font-family:"appleberry" !important;
+      	}
+        #konkurs-filters-submit{
+          background: url('../../img/menu_primenit.jpg');
+          display: inline-block;
+          width: 144px;
+          height: 34px;
+          line-height: 34px;
+          margin-top: 25px;
+          cursor:pointer;
+          &:hover{
+            opacity:0.6;
+            transition: opacity 0.3s  ease-out;
+          }
+        }
+        .filter-field_kat{
+          .form-type-select .form-item>div:not(:last-child)::after{
+            content: "|";
+            color:@color_gray_1;
+          }
+          .form-item{
+            text-align: center;
+            &>div{
+              display: inline-block;
+            }
+            a{
+              color:@color_gray_1;
+              &:hover,
+              &.active{
+                color:@color_4;
+                transition: color 0.3s  ease-out;
+              }
+            }
+          }
+        }
+        #filter-field_nominaciya{
+          #konkurs-nominaciya-toggle-button{
+            margin-bottom: 20px;
+          }
+          #konkurs-nominaciya-toggle{
+            margin-bottom: 20px;
+            height: 200px;
+            overflow-y: scroll;
+          }
+          .filter-field_nominaciya-title{
+            font-family: 'appleberry';
+            font-size: 1.3em;
+            color:@color_4;
+          }
+          .form-type-bef-link{
+            border-bottom: 1px solid @color_gray_1;
+            font-family: 'appleberry';
+            text-transform: uppercase;
+            padding: 0;
+            margin: 10px 0;
+            a{
+              color:@color_gray_1;
+              text-decoration: none;
+              &:hover,
+              &.active{
+                color:@color_4;
+                transition: color 0.3s  ease-out;
+              }
+            }
+          }
+        }
+        #selected_filters{
+          font-family: 'appleberry';
+          color:@color_gray_1;
+        }
+        .send_work{
+          background-image: url('../../img/zvezda_student/Otprav_RABOTU.png');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: block;
+          width: 100%;
+          height: 100px;
+          position: inherit;
+          bottom: 75px;
+          left: auto;
+          right: auto;
+          top: auto;
+          bottom: auto;
+        }
+        .star-kasting-wrapper{
+          position: relative;
+          .star-kasting{
+             background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: block;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            left: -45%;
+          }
+        }
+        .send_work,
+        .star-kasting{
+          &:hover{
+            opacity:0.8;
+            transition: opacity 0.3s  ease-out;
+          }
+        }
+
+        .form-item-contestfilter,
+        .form-item-sort-by,
+        .form-item-field-gorod-tid{
+          background-repeat: no-repeat;
+          input,
+          select{
+            border: none;
+            box-shadow:none;
+            background: none;
+            margin: 0;
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
+          }
+        }
+        .form-item-contestfilter,
+        .form-item-field-gorod-tid{
+          background-image: url(../../img/filter-konkurs-input-background.jpg);
+          input{
+            padding-left: 22px;
+            padding-right: 5px;
+          }
+        }
+
+        .form-item-contestfilter{
+          background-position: left center;
+          background-size: 100% 100%;
+          height: 34px;
+        }
+
+        position: relative;
+        .form-item-sort-by{
+          background-position: left bottom;
+          background-image: url(../../img/filter-konkurs-input-background-arrow.jpg);
+          background-size: 100% 34px;
+          overflow: hidden;
+          select{
+            padding-right: 10%;
+            padding-left:5px;
+            width: 109%;
+            cursor: pointer;
+          }
+
+          .glyphicon-chevron-down{
+            position: absolute;
+            right:0;
+            padding-right: 22px;
+            padding-top: 35px;
+            font-size: 0.5em;
+          }
+        }
+
+        .form-item-field-gorod-tid{
+          background-position: left bottom;
+          background-size: 100% 34px;
+          .dropdown-menu li.active a{
+            background: @color_4 !important;
+          }
+        }
+      }
+
+      //Представление
+      .views-rows-wrapper{
+        min-height: 800px;
+        .views-row{
+          .node--view--konkurs{
+            border:1px solid @color_gray_1;
+            border-radius: 2px;
+            margin: 5px 0;
+            padding: 5px 0;
+            header{
+              padding:0 10px;
+              height: 62px;
+              .field-title{
+                overflow: hidden;
+                height: 23px;
+                a{
+                  color:@color_4;
+                  text-transform: capitalize;
+                }
+              }
+            }
+            section{
+              height: 237px;
+              .carousel{
+                height: 237px;
+                overflow: hidden;
+                .carousel-control{
+                  &:hover{
+                    &.right{
+                      color:@color_1;
+                      transition:color 0.3s  ease-out;
+                    }
+                    &.left{
+                      color:@color_3;
+                      transition:color 0.3s  ease-out;
+                    }
+                  }
+                }
+                .carousel-indicators{
+                  li{
+                    &:hover{
+                      &:nth-child(1){background-color: @color_1; border-color:darken(@color_1,10%);}
+                      &:nth-child(2){background-color: @color_2; border-color:darken(@color_2,10%);}
+                      &:nth-child(3){background-color: @color_3; border-color:darken(@color_3,10%);}
+                      &:nth-child(4){background-color: @color_4; border-color:darken(@color_4,10%);}
+                      &:nth-child(5){background-color: @color_5; border-color:darken(@color_5,10%);}
+                      &:nth-child(6){background-color: @color_6; border-color:darken(@color_6,10%);}
+                    }
+                  }
+                }
+                .item{
+                  height: 237px;
+                  overflow: hidden;
+                  img,
+                  embed{
+                    min-width: 100%;
+                    min-height: 100%;
+                    height: auto;
+                  }
+                  a{
+                    height: 100%;
+                    display: block;
+                    &:hover{
+                      opacity:0.7;
+                      transition: opacity 0.3s  ease-out;
+                    }
+                  }
+                  .play{
+                    z-index: 1;
+                    color: #ffffff;
+                    position: absolute;
+                    line-height: 237px;
+                    font-size: 3em;
+                    text-align: center;
+                    width: 100%;
+                    &:hover{
+                      color: @color_2;
+                      transition:color 0.3s  ease-out;
+                    }
+                  }
+                  &.item-type-audio{
+                    text-align: center;
+                    background-image:url(../../img/nota.png) ;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    audio{
+                      margin-top: 103px;
+                      width: 65%;
+                    }
+                  }
+                  &.item-type-youtube{
+                    position: relative;
+                  }
+
+                  &.item-type-video-vk{
+                    a.carousel-colorbox-inline {
+                      position: relative;
+                      display: block;
+                      height: 100%;
+                      .play{
+                        z-index: 1;
+                        color: #ffffff;
+                        position: absolute;
+                        line-height: 237px;
+                        font-size: 3em;
+                        text-align: center;
+                        width: 100%;
+                        height: 100%;
+                        &:hover{
+                          color: @color_2;
+                          transition:color 0.3s  ease-out;
+                        }
+                      }
+                    }
+                  }
+
+                  &.item-type-video{
+                    .data{
+                      padding: 10px;
+                      height: 90%;
+                      width: 90%;
+                      text-align: center
+                    }
+                    video{
+                      height: 100%;
+                      width: 100%;
+                      margin-left: auto;
+                    }
+                    a{
+                      background-image: url('../../img/video-icon.jpg');
+                      background-position: center;
+                      background-repeat: no-repeat;
+                      background-size: 100px 100px;
+                    }
+                  }
+                  &.item-type-word{
+                    a{
+                      background-image: url('../../img/word-doc-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-vkontakte-link{
+                    a{
+                      background-image: url('../../img/vkontakte-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-other{
+                    a{
+                      background-image: url('../../img/download-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-pdf{
+                    a{
+                      background-image: url('../../img/pdf-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-ppt{
+                    a{
+                      background-image: url('../../img/ppt-icon.png');
+                      background-size: 100px 100px;
+                      background-position: center;
+                      background-repeat: no-repeat;
+                    }
+                  }
+                  &.item-type-vkontakte{
+                    position: relative;
+                    .overlay{
+                      position: absolute;
+                      height: 100%;
+                      width: 100%;
+                      top: 0;
+                      left: 0;
+                    }
+                    iframe{
+                      width: 100%!important;
+                      height: 112%!important;
+                    }
+                  }
+                }
+              }
+            }
+            footer{
+              padding:5px 10px;
+              .likebtn-wrapper{
+                float: right;
+              }
+            }
+          }
+        }
+      }
+      .pagination{
+        li{
+          &.active  a{
+            background-color: @color_4;
+            border-color:@color_4;
+            color: #ffffff;
+          }
+          a{color: @color_4;}
+        }
+      }
+    }
+  }
+  .field_zagruzka{
+    text-align:center;
+    margin-top: 10px;
+  }
+}
+
+
+@media (min-width: @screen-sm-min){
+  #zvezda-content-wrapper{
+    #zvezda-content{
+      #page--konkurs.work-page{
+        #page-title{
+          text-align: center;
+          font-family:'intro';
+          font-size: 1.3em;
+          color:@color_gray_1;
+        }
+        //Форма сортировки
+        #views-exposed-form--konkurs{
+          #konkurs-filters-submit{
+            background: url('../../img/menu_primenit.jpg');
+            display: inline-block;
+            width: 144px;
+            height: 34px;
+            line-height: 34px;
+            margin-top: 25px;
+            cursor:pointer;
+            &:hover{
+              opacity:0.6;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+          .filter-field_kat{
+            .form-type-select .form-item>div:not(:last-child)::after{
+              content: "|";
+              color:@color_gray_1;
+            }
+            .form-item{
+              text-align: center;
+              &>div{
+                display: inline-block;
+              }
+              a{
+                color:@color_gray_1;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+              .bef-select-as-links{
+                margin-left: 34%;
+              }
+            }
+          }
+          #filter-field_nominaciya{
+            .filter-field_nominaciya-title{
+              font-family: 'appleberry';
+              font-size: 1.3em;
+              color:@color_4;
+            }
+            #konkurs-nominaciya-toggle{
+              height: inherit;
+              overflow: inherit;
+            }
+            .form-type-bef-link{
+              border-bottom: 1px solid @color_gray_1;
+              font-family: 'appleberry';
+              text-transform: uppercase;
+              padding: 0;
+              margin: 10px 0;
+              a{
+                color:@color_gray_1;
+                text-decoration: none;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+            }
+          }
+          #selected_filters{
+            font-family: 'appleberry';
+            color:@color_gray_1;
+          }
+          .send_work{
+            background-image:url('../../img/STAR_sent_work.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 100%;
+            height: 100px;
+            position: inherit;
+            bottom: 75px;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+          }
+          .star-kasting-wrapper{
+            position: relative;
+            .star-kasting{
+              background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              display: block;
+              height: 80px;
+              width: 80px;
+              position: absolute;
+              left: -45%;
+            }
+          }
+          .send_work,
+          .star-kasting{
+            &:hover{
+              opacity:0.8;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+
+          .form-item-contestfilter,
+          .form-item-sort-by,
+          .form-item-field-gorod-tid{
+            background-repeat: no-repeat;
+            input,
+            select{
+              border: none;
+              box-shadow:none;
+              background: none;
+              margin: 0;
+              -webkit-appearance: none;
+              -moz-appearance:    none;
+              appearance:         none;
+            }
+          }
+          .form-item-contestfilter,
+          .form-item-field-gorod-tid{
+            background-image: url(../../img/filter-konkurs-input-background.jpg);
+            input{
+              padding-left: 22px;
+              padding-right: 5px;
+            }
+          }
+
+          .form-item-contestfilter{
+            background-position: left center;
+            background-size: 100% 100%;
+            height: 34px;
+          }
+
+          position: relative;
+          .form-item-sort-by{
+            background-position: left bottom;
+            background-image: url(../../img/filter-konkurs-input-background-arrow.jpg);
+            background-size: 100% 34px;
+            overflow: hidden;
+            select{
+              padding-right: 10%;
+              padding-left:5px;
+              width: 109%;
+              cursor: pointer;
+            }
+
+            .glyphicon-chevron-down{
+              position: absolute;
+              right:0;
+              padding-right: 22px;
+              padding-top: 35px;
+              font-size: 0.5em;
+            }
+          }
+
+          .form-item-field-gorod-tid{
+            background-position: left bottom;
+            background-size: 100% 34px;
+            .dropdown-menu li.active a{
+              background: @color_4 !important;
+            }
+          }
+        }
+
+        //Представление
+        .views-rows-wrapper{
+          min-height: 800px;
+          .views-row{
+            .node--view--konkurs{
+              border:1px solid @color_gray_1;
+              border-radius: 2px;
+              margin: 5px 0;
+              padding: 5px 0;
+              header{
+                padding:0 10px;
+                height: 62px;
+                .field-title{
+                  overflow: hidden;
+                  height: 23px;
+                  a{
+                    color:@color_4;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              section{
+                height: 237px;
+                .carousel{
+                  height: 237px;
+                  overflow: hidden;
+                  .carousel-control{
+                    &:hover{
+                      &.right{
+                        color:@color_1;
+                        transition:color 0.3s  ease-out;
+                      }
+                      &.left{
+                        color:@color_3;
+                        transition:color 0.3s  ease-out;
+                      }
+                    }
+                  }
+                  .carousel-indicators{
+                    li{
+                      &:hover{
+                        &:nth-child(1){background-color: @color_1; border-color:darken(@color_1,10%);}
+                        &:nth-child(2){background-color: @color_2; border-color:darken(@color_2,10%);}
+                        &:nth-child(3){background-color: @color_3; border-color:darken(@color_3,10%);}
+                        &:nth-child(4){background-color: @color_4; border-color:darken(@color_4,10%);}
+                        &:nth-child(5){background-color: @color_5; border-color:darken(@color_5,10%);}
+                        &:nth-child(6){background-color: @color_6; border-color:darken(@color_6,10%);}
+                      }
+                    }
+                  }
+                  .item{
+                    height: 237px;
+                    overflow: hidden;
+                    img,
+                    embed{
+                      min-width: 100%;
+                      min-height: 100%;
+                      height: auto;
+                    }
+                    a{
+                      height: 100%;
+                      display: block;
+                      &:hover{
+                        opacity:0.7;
+                        transition: opacity 0.3s  ease-out;
+                      }
+                    }
+                    &.item-type-audio{
+                      text-align: center;
+                      background-image:url(../../img/nota.png) ;
+                      background-size: contain;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      audio{
+                        margin-top: 103px;
+                        width: 65%;
+                      }
+                    }
+                    &.item-type-youtube{
+                      position: relative;
+                      .play{
+                        z-index: 1;
+                        color: #ffffff;
+                        position: absolute;
+                        line-height: 237px;
+                        font-size: 3em;
+                        text-align: center;
+                        width: 100%;
+                        &:hover{
+                          color: @color_2;
+                          transition:color 0.3s  ease-out;
+                        }
+                      }
+                    }
+                    &.item-type-video{
+                      .data{
+                        padding: 10px;
+                        height: 90%;
+                        width: 90%;
+                        text-align: center
+                      }
+                      video{
+                        height: 100%;
+                        width: 100%;
+                        margin-left: auto;
+                      }
+                      a{
+                        background-image: url('../../img/video-icon.jpg');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100px 100px;
+                      }
+                    }
+                    &.item-type-word{
+                      a{
+                        background-image: url('../../img/word-doc-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-vkontakte-link{
+                      a{
+                        background-image: url('../../img/vkontakte-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-other{
+                      a{
+                        background-image: url('../../img/download-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-pdf{
+                      a{
+                        background-image: url('../../img/pdf-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-ppt{
+                      a{
+                        background-image: url('../../img/ppt-icon.png');
+                        background-size: 100px 100px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                      }
+                    }
+                    &.item-type-vkontakte{
+                      position: relative;
+                      .overlay{
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                      }
+                      iframe{
+                        width: 100%!important;
+                        height: 112%!important;
+                      }
+                    }
+                  }
+                }
+              }
+              footer{
+                height: 69px;
+                padding:5px 10px;
+                .likebtn-wrapper{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+        .pagination{
+          li{
+            &.active  a{
+              background-color: @color_4;
+              border-color:@color_4;
+              color: #ffffff;
+            }
+            a{color: @color_4;}
+          }
+        }
+      }
+    }
+    .field_zagruzka{
+      text-align:center;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+
+@media (min-width: @screen-md-min){
+  #zvezda-content-wrapper{
+    #zvezda-content{
+      #page--konkurs.work-page{
+        #page-title{
+          text-align: center;
+          font-family:'intro';
+          font-size: 1.3em;
+          color:@color_gray_1;
+        }
+        //Форма сортировки
+        #views-exposed-form--konkurs{
+          #konkurs-filters-submit{
+            background: url('../../img/menu_primenit.jpg');
+            display: inline-block;
+            width: 144px;
+            height: 34px;
+            line-height: 34px;
+            margin-top: 25px;
+            cursor:pointer;
+            &:hover{
+              opacity:0.6;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+          .filter-field_kat{
+            .form-type-select .form-item>div:not(:last-child)::after{
+              content: "|";
+              color:@color_gray_1;
+            }
+            .form-item{
+              text-align: center;
+              &>div{
+                display: inline-block;
+              }
+              a{
+                color:@color_gray_1;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+              .bef-select-as-links{
+                margin-left: 34%;
+              }
+            }
+          }
+          #filter-field_nominaciya{
+            .filter-field_nominaciya-title{
+              font-family: 'appleberry';
+              font-size: 1.3em;
+              color:@color_4;
+            }
+            .form-type-bef-link{
+              border-bottom: 1px solid @color_gray_1;
+              font-family: 'appleberry';
+              text-transform: uppercase;
+              padding: 0;
+              margin: 10px 0;
+              a{
+                color:@color_gray_1;
+                text-decoration: none;
+                &:hover,
+                &.active{
+                  color:@color_4;
+                  transition: color 0.3s  ease-out;
+                }
+              }
+            }
+          }
+          #selected_filters{
+            font-family: 'appleberry';
+            color:@color_gray_1;
+          }
+          .send_work{
+              background-image: url('../../img/zvezda_student/Otprav_RABOTU.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            width: 100%;
+            height: 100px;
+            position: inherit;
+            bottom: 75px;
+            left: auto;
+            right: auto;
+            top: auto;
+            bottom: auto;
+          }
+          .star-kasting-wrapper{
+            position: relative;
+            .star-kasting{
+              background-image: url('../../img/zvezda_student/kasting_ONLINE.png');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+              display: block;
+              height: 80px;
+              width: 80px;
+              position: absolute;
+              left: -45%;
+            }
+          }
+          .send_work,
+          .star-kasting{
+            &:hover{
+              opacity:0.8;
+              transition: opacity 0.3s  ease-out;
+            }
+          }
+
+          .form-item-contestfilter,
+          .form-item-sort-by,
+          .form-item-field-gorod-tid{
+            background-repeat: no-repeat;
+            input,
+            select{
+              border: none;
+              box-shadow:none;
+              background: none;
+              margin: 0;
+              -webkit-appearance: none;
+              -moz-appearance:    none;
+              appearance:         none;
+            }
+          }
+          .form-item-contestfilter,
+          .form-item-field-gorod-tid{
+            background-image: url(../../img/filter-konkurs-input-background.jpg);
+            input{
+              padding-left: 22px;
+              padding-right: 5px;
+            }
+          }
+
+          .form-item-contestfilter{
+            background-position: left center;
+            background-size: 100% 100%;
+            height: 34px;
+          }
+
+          position: relative;
+          .form-item-sort-by{
+            background-position: left bottom;
+            background-image: url(../../img/filter-konkurs-input-background-arrow.jpg);
+            background-size: 100% 34px;
+            overflow: hidden;
+            select{
+              padding-right: 10%;
+              padding-left:5px;
+              width: 109%;
+              cursor: pointer;
+            }
+
+            .glyphicon-chevron-down{
+              position: absolute;
+              right:0;
+              padding-right: 22px;
+              padding-top: 35px;
+              font-size: 0.5em;
+            }
+          }
+
+          .form-item-field-gorod-tid{
+            background-position: left bottom;
+            background-size: 100% 34px;
+            .dropdown-menu li.active a{
+              background: @color_4 !important;
+            }
+          }
+        }
+        .views-filters-wrapper{
+          height: 200px;
+          overflow: visible;
+          &>div,
+          form{
+            height: 100%;
+            overflow: visible;
+          }
+        }
+
+        //Представление
+        .views-rows-wrapper{
+          min-height: 800px;
+          .views-row{
+            .node--view--konkurs{
+              border:1px solid @color_gray_1;
+              border-radius: 2px;
+              margin: 5px 0;
+              padding: 5px 0;
+              header{
+                padding:0 10px;
+                height: 62px;
+                .field-title{
+                  overflow: hidden;
+                  height: 23px;
+                  a{
+                    color:@color_4;
+                    text-transform: capitalize;
+                  }
+                }
+              }
+              section{
+                height: 237px;
+                .carousel{
+                  height: 237px;
+                  overflow: hidden;
+                  .carousel-control{
+                    &:hover{
+                      &.right{
+                        color:@color_1;
+                        transition:color 0.3s  ease-out;
+                      }
+                      &.left{
+                        color:@color_3;
+                        transition:color 0.3s  ease-out;
+                      }
+                    }
+                  }
+                  .item{
+                    height: 237px;
+                    overflow: hidden;
+                    img,
+                    embed{
+                      min-width: 100%;
+                      min-height: 100%;
+                      height: auto;
+                    }
+                    a{
+                      height: 100%;
+                      display: block;
+                      &:hover{
+                        opacity:0.7;
+                        transition: opacity 0.3s  ease-out;
+                      }
+                    }
+                  }
+                }
+              }
+              footer{
+                height: 69px;
+                padding:5px 10px;
+                .likebtn-wrapper{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+        .pagination{
+          li{
+            &.active  a{
+              background-color: @color_4;
+              border-color:@color_4;
+              color: #ffffff;
+            }
+            a{color: @color_4;}
+          }
+        }
+      }
+    }
+    .field_zagruzka{
+      text-align:center;
+      margin-top: 10px;
+    }
+  }
+
+}

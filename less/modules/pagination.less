@@ -1,0 +1,20 @@
+.pagination{
+  .disabled{
+    display:none;
+  }
+}
+@media (max-width: @screen-sm-min){
+  .pagination{
+    width: 100%;
+    text-align: center;
+
+    li.prev,
+    li.next,
+    a{
+      display: inline-block;
+    }
+    li{
+      display: none;
+    }
+  }
+}

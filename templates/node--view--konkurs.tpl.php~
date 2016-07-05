@@ -1,0 +1,157 @@
+<?php
+if(!isset($fieldZagruzka))$fieldZagruzka="field_zagruzka_1_etap";
+
+$items=isset($content[$fieldZagruzka]['#items'])?$content[$fieldZagruzka]['#items']:array();
+if(isset($content['field__vkontakte']['#items'][0]['value']) && preg_match('/iframe/',$content['field__vkontakte']['#items'][0]['value'])) {
+    $items[] = $content['field__vkontakte']['#items'][0];
+}?>
+
+<div class="node--konkurs">
+    <header>
+        <div class="field-title"><a href="<?php echo $node_url?>"><strong><?php echo $title?></strong></a></div>
+        <?php echo strip_tags($name) ;?>
+    </header>
+    <section> 
+        <div id="carousel-items-<?php echo $id?>" class="carousel slide" <?php if(count($items)>1){?>data-ride="carousel"<?php }?> data-interval="false">
+            <?php if(count($items)>1){?>
+                <ol class="carousel-indicators">
+                    <?php foreach($items as $key=>$item){?>
+                        <li data-target="carousel-items-<?php echo $id?>" data-slide-to="<?php echo $key?>" <?php if($key==0){?>class="active"<?php }?>></li>
+                    <?php }?>
+                </ol>
+            <?php }?>
+            <div class="carousel-inner" role="listbox">
+                <?php foreach($items as $key=>$item) {
+                    if (isset($item['uri'])){ 
+                        $url = file_create_url($item['uri']);
+                        $pathinfo = pathinfo($url);
+                        $extType = 'other';
+                        if (isset($pathinfo['extension'])) {
+                            if (in_array($pathinfo['extension'], array('jpg','jpeg', 'png', 'bmp','gif'))) {
+                                $extType = 'img';
+                            } elseif (in_array($pathinfo['extension'], array('mp3'))) {
+                                $extType = 'audio';
+                            } elseif (in_array($pathinfo['extension'], array('pdf'))) {
+                                $extType = 'pdf';
+                            }elseif (in_array($pathinfo['extension'], array('mp4'))) {
+                                $extType = 'video';
+                            }elseif(in_array($pathinfo['extension'], array('ppt','pptx','pps','ppsx'))){
+                                $extType = 'ppt';
+                            }elseif(in_array($pathinfo['extension'], array('doc','docx','rtf'))){
+                                $extType = 'word';
+                            }
+                        }else {
+                            $extType = 'youtube';
+                        }
+                    }else{
+                        $extType='vkontakte';
+                    }?>
+                    <div class="<?php if($key==0){?>active<?php }?> item item-type-<?php echo $extType?>">
+                        <?php  switch($extType){
+                            case 'audio':?>
+                                <audio src="<?php echo $url?>" controls></audio>
+                            <?php break;
+                            case 'youtube':
+                                $youtubeId=str_replace('watch?v=','',$pathinfo['basename']);?>
+                                <a rel="group-<?php echo $id?>" href="http://www.youtube.com/v/<?php echo $youtubeId?>?fs=1&width=640&height=480&iframe=true&autoplay=1" class="carousel-colorbox-iframe">
+                                    <div class="play">
+                                        <span class="glyphicon glyphicon-play-circle"></span>
+                                    </div>
+                                    <img src="http://img.youtube.com/vi/<?php echo $youtubeId?>/0.jpg"/>
+                                </a>
+                            <?php break;
+                            case 'img':?>
+                                <a rel="group-<?php echo $id?>" href="<?php echo $url?>" target="_blank" class="carousel-colorbox-iframe">
+                                    <img src="<?php echo $url?>"/>
+                                </a>
+                            <?php break;
+                            case 'pdf': ?>
+                                <a href="<?php echo $url?>">
+
+                                </a>
+                            <?php break;
+                            case 'word': ?>
+                                <a href="<?php echo $url?>">
+
+                                </a>
+                                <?php break;
+                            case 'ppt':?>
+                                <a href="<?php echo $url?>">
+
+                                </a>
+                            <?php break;
+                            case "vkontakte":?>
+                                <?php preg_match('/src="(.+)"/',$item['value'],$matches);?>
+                                <a rel="group-<?php echo $id?>" href="<?php echo $matches[1]?>" class="carousel-colorbox-iframe">
+                                    <div class="overlay">
+                                    </div>
+                                    <?php echo $item['value'];?>
+                                </a>
+                                <?php  break;
+                            case 'video' :?>
+                                <div class="hide">
+                                    <div id="prodpreview">
+                                        <div style="padding: 10px">
+                                            <?php  echo  render($content['field_zagruzka'])?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class='carousel-colorbox-inline' href="#prodpreview">
+
+                                </a>
+                                <?php break ;?>
+                            <?php }?>
+                    </div>
+                <?php }?>
+            </div>
+            <?php if(count($items)>1){?>
+                <a class="left carousel-control" href="#carousel-items-<?php echo $id?>" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-items-<?php echo $id?>" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            <?php }?>
+        </div>
+
+
+
+
+
+
+
+        <?php       // var_dump(file_create_url($content['field_zagruzka']['#items'][1]['uri']));
+
+
+
+        //var_dump( file_create_url($content['field_zagruzka'][0]['#file']->uri));
+
+        //var_dump($content['field__vkontakte']['#items'][0]['value']);
+        //echo render($content['field__vkontakte']);
+
+        //echo render($content['field__vkontakte']);
+
+        /* echo render($content['title']);
+         echo render($content['workflow']);
+         echo render($content['links']);
+
+         echo render($content['field_kat']);
+
+         echo render($content['field_golosovanie_3_etap']);
+         echo render($content['field_vozkon']);
+         echo render($content['workflow_current_state']);*/?>
+
+    </section>
+    <footer class="row">
+        <div class="col-md-8">
+            <?php echo render($content['field_vozkon']);?>
+            <?php echo render($content['field_kat']);?>
+        </div>
+        <div class="col-md-8">
+            <?php echo render($content['field_golosovanie']);?>
+        </div>
+    </footer>
+</div>
+

@@ -1,0 +1,102 @@
+#pre-footer   {
+  height:60px;
+  background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_front/footer.png");
+  background-position: center;
+}
+
+#cds_front_zvezda {
+  background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_front/cds-logo.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70px;
+  a {
+    display: block;
+    width: 100%;
+    height: 70px;
+  }
+}
+
+#zvezda-content2{
+  margin-top: -100px;
+  padding-bottom: 110px;
+  padding-top: 150px;
+}
+
+#zvezda-logo-10 {
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 260px;
+  &.zvezda-logo-10 {
+    background-image: url("/sites/all/themes/zvezdaudachi2/img/zvezda_front/zvezda_logo.png");
+    background-position: center center;
+    .zvezda-logo-link {
+      height: 155px;
+      display: block;
+    }
+  }
+}
+
+#zvezda-pri-podd {
+  ul li {
+    font-size: 0.4em;
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-left: -10px;
+    padding-left: 30px;
+    padding-top: 3px;
+    background-size: 32px auto;
+    min-height: 40px;
+    width: 33%;
+    display: block;
+    float: left;
+  }
+}
+
+#zvezda-page--front{
+  &:after,
+  &:before{
+    width: 7%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-size: 100% auto ;
+    content: '_';
+    color:#ffffff;
+    z-index: 0;
+    background-repeat: repeat-y;
+  }
+  &:after{
+    right:0;
+    background-image: url('../../img/zvezda_front/right_pole.png');
+    background-position: right top;
+  }
+  &:before{
+    left:0;
+    background-image: url('../../img/Pole_left_1.png');
+    background-position: left top;
+  }
+  .zvezda-content{
+    background-repeat: no-repeat;
+    &.zvezda-content-left{
+      background-size:  contain;
+      background-image: url('../../img/zvezda_front/school_.png');
+      background-position:  center center;
+      position: relative;
+      margin-top: -60px;
+      height: 400px;
+      #zvezda-content-left-spacer{
+        height: 400px;
+        cursor: url('../../img/zvezda_front/pointer.cur') , pointer;
+      }
+    }
+  }
+}
+&.zvezda-content-right{
+  height: 350px;
+  cursor: url('../../img/zvezda_front/pointer.cur') , pointer;
+  background-size:  contain;
+  background-position: center center;
+  background-image: url('../../img/zvezda_front/student_.png');
+}

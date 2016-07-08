@@ -8,7 +8,13 @@ $dis = str_replace(array("\r\n", "\r", "\n"), '', strip_tags($discr));
 <div class="node--view--news <?php print $classes; ?>"  id="node-<?php print $node->nid; ?>"  <?php print $attributes; ?>>
     <div class="row">
         <div class="col-lg-13 col-md-13 col-sm-16 col-xs-16 col-lg-offset-3 col-md-offset-3 col-sm-offset-0 col-xs-offset-0">
-            <div class="h3"><a href="/<?php print drupal_get_path_alias('node/' . $node->nid); ?>"><?php echo  $title ?></a></div>
+            <div class="h3"><!--a href=""--><?php echo  $title ?><!--/a--></div>
+            <div class="hidden">
+              <?php
+              $alias = drupal_get_path_alias(('node/' . $node->nid);
+              echo $alias;
+              ?>
+            </div>
         </div>
     </div>
     <div class="row">

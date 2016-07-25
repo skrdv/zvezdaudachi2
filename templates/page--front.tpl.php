@@ -99,8 +99,19 @@ d.addEventListener("DOMContentLoaded", f, false);
       <div class="col-xs-16 col-sm-16 col-md-16 col-lg-16">
         <div id="zvezda-page--front" class="front-page">
           <div class="row">
-            <div class="col-xs-16 col-sm-16 col-md-8 col-lg-8 link zvezda-content zvezda-content-left" onclick="location.href='school'; yaCounter36971915.reachGoal('shkololo'); return true;"></div>
-            <div class="col-xs-16 col-sm-16 col-md-8 col-lg-8 link zvezda-content zvezda-content-right" onclick="location.href='student'; yaCounter36971915.reachGoal('Stydololo'); return true;" ></div>
+            <div class="col-xs-16 col-sm-16 col-md-8 col-lg-8 link zvezda-content zvezda-content-left">
+              <a href="/school">
+                <img src="/sites/all/themes/zvezdaudachi2/img/zvezda_front/school.png" alt="Всероссийский творческий конкурс для школьников" />
+                <p><strong>Творческий конкурс для школьников<strong></p>
+              </a>
+
+            </div>
+            <div class="col-xs-16 col-sm-16 col-md-8 col-lg-8 link zvezda-content zvezda-content-right">
+              <a href="/student">
+                <img class="img-" src="/sites/all/themes/zvezdaudachi2/img/zvezda_front/student.png" alt="Всероссийский творческий конкурс для студентов" />
+                <p><strong>Творческий конкурс для студентов<strong></p>
+              </a>
+            </div>
           </div>
         </div>
         <a class="link logo-pro" href = "http://pro.zvezdaudachi.com">

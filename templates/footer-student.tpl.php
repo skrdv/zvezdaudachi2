@@ -56,9 +56,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://spbhorror.ru" target="_blank">
-                        <img src="/sites/all/themes/zvezdaudachi2/img/footer/logo_1.jpg">
-                    </a>
+                  <a href="http://artteatr.com/" target="_blank">
+                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/artteatr.jpg">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.peterburg.ru/" target="_blank">
+                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/peterburg_ru_logo_180.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.gorodovoy.spb.ru/" target="_blank">
+                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/gorodovoy_logo_180.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://www.arttube.ru/" target="_blank">
+                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/arttube_logo_180.png">
+                  </a>
                 </li>
             </ul>
         </div>

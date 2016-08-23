@@ -1,5 +1,5 @@
 <?php
-function zvezdaudachi2_form_system_theme_settings_alter(&$form, $form_state) {
+function zu_form_system_theme_settings_alter(&$form, $form_state) {
     $form['links'] = array(
         '#type' => 'fieldset',
         '#title' => 'Ссылки в шаблоне',

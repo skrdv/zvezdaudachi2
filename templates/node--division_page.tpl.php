@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-16 col-xs-16 zvezda-content zvezda-content-left">
         <div id="zvezda-content-left-spacer">
-            <?php $add_node_konkurs_link = zvezdaudachi2_get_add_konkurs_link();
+            <?php $add_node_konkurs_link = zu_get_add_konkurs_link();
               if(!empty($add_node_konkurs_link)){?>
                 <a href="<?php echo $add_node_konkurs_link ?>" class="a" id="zvezda-content-send-work"></a>
             <?php }?>

@@ -14,32 +14,15 @@ $uri == 'zvezdaudachi.com//moi-raboty' or
 $uri == 'zvezdaudachi.com//user' ) {?>
 <div id="btn-school-casting">
   <a href="/school/casting" class="link">
-		<img src="/sites/all/themes/zvezdaudachi2/img/school_casting.png" width="110px">
+		<img src="/sites/all/themes/zu/img/school_casting.png" width="110px">
 	</a>
 </div>
 <div id="btn-school-work">
   <a href="/node/add/konkurs-school" class="link">
-		<img src="/sites/all/themes/zvezdaudachi2/img/school_send_work.png">
+		<img src="/sites/all/themes/zu/img/school_send_work.png">
 	</a>
 </div>
 <?php } ?>
-
-<?php /*
-$path = $_SERVER['REQUEST_URI'];
-$find = 'videos';
-$pos = strpos($path, $find);
-if ($pos !== false) { ?>
-  <div id="btn-school-casting">
-    <a href="/school/casting" class="link">
-  		<img src="/sites/all/themes/zvezdaudachi2/img/school_casting.png" width="110px">
-  	</a>
-  </div>
-  <div id="btn-school-work">
-    <a href="/node/add/konkurs-school" class="link">
-  		<img src="/sites/all/themes/zvezdaudachi2/img/school_send_work.png">
-  	</a>
-  </div>
-<?php } */ ?>
 
 <div id="zvezda-header-school">
   <div class="">
@@ -51,7 +34,7 @@ if ($pos !== false) { ?>
     </div>
     <div class="col-xs-16 col-sm-3 col-md-3 col-lg-3">
       <a href="http://www.cds.spb.ru/" target="_blank" class="link logo-cds-header-school">
-        <img src="/sites/all/themes/zvezdaudachi2/img/logo_cds_small.png" />
+        <img src="/sites/all/themes/zu/img/logo_cds_small.png" />
       </a>
     </div>
     <div class="col-xs-16 col-sm-16 col-md-16 col-lg-16">
@@ -74,7 +57,7 @@ if ($pos !== false) { ?>
   <div class="col-xs-16 col-sm-16 col-md-16 col-lg-16 header-slider-wrap">
     <div class="zvezda-logo-3 school-logo-wrap">
       <a class="link logo-school" href="/">
-        <img src="/sites/all/themes/zvezdaudachi2/img/logo_leto2016.png" />
+        <img src="/sites/all/themes/zu/img/logo_leto2016.png" />
       </a>
       <div class="social-school" style="visibility:<?php if (current_path() == 'node/83758') {echo 'hidden'; } ?>">
         <ul class="list-unstyled social-btns">
@@ -87,18 +70,7 @@ if ($pos !== false) { ?>
         </ul>
       </div>
     </div>
-    <?php
-    for ($i=1; $i<31; $i++) { $img[]='/'.path_to_theme().'/img/slider/slider'.$i.'.jpg'; }
-    shuffle($img);
-    $img=array_splice($img,0,8);
-    ?>
-    <div id="zvezda-slider-wrapper" class="hidden-xs header-slider">
-      <ul id="zvezda-slider">
-        <?php foreach($img as $img){?>
-          <li><img src="<?php echo $img?>"></li>
-        <?php }?>
-      </ul>
-    </div>
+
   </div>
 
 </div>

@@ -44,75 +44,36 @@
                     </ul>
                 </div>
             </div>
-            <?php
-                $img[]='/'.path_to_theme().'/img/slider/slider_1.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_2.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_3.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_4.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_5.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_6.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_7.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_8.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_9.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_10.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_11.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_12.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_13.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_14.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_15.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_16.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_17.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_18.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_19.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_20.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_21.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_22.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_23.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_24.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_25.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_26.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_27.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_28.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_29.jpg';
-                $img[]='/'.path_to_theme().'/img/slider/slider_30.jpg';
-                shuffle($img);
-                $img=array_splice($img,0,8);?>
-            <div id="zvezda-slider-wrapper" class="hidden-xs">
-                <ul id="zvezda-slider">
-                    <?php foreach($img as $img){?>
-                        <li><img src="<?php echo $img?>"></li>
-                    <?php }?>
-                </ul>
-            </div>
+            
         </div>
     </div>
 </div>
-<!— Yandex.Metrika counter —> 
-<script type="text/javascript"> 
-(function (d, w, c) { 
-(w[c] = w[c] || []).push(function() { 
-try { 
-w.yaCounter36971915 = new Ya.Metrika({ 
-id:36971915, 
-clickmap:true, 
-trackLinks:true, 
-accurateTrackBounce:true, 
-webvisor:true, 
-trackHash:true 
-}); 
-} catch(e) { } 
-}); 
+<!— Yandex.Metrika counter —>
+<script type="text/javascript">
+(function (d, w, c) {
+(w[c] = w[c] || []).push(function() {
+try {
+w.yaCounter36971915 = new Ya.Metrika({
+id:36971915,
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true,
+trackHash:true
+});
+} catch(e) { }
+});
 
-var n = d.getElementsByTagName("script")[0], 
-s = d.createElement("script"), 
-f = function () { n.parentNode.insertBefore(s, n); }; 
-s.type = "text/javascript"; 
-s.async = true; 
-s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+var n = d.getElementsByTagName("script")[0],
+s = d.createElement("script"),
+f = function () { n.parentNode.insertBefore(s, n); };
+s.type = "text/javascript";
+s.async = true;
+s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-if (w.opera == "[object Opera]") { 
-d.addEventListener("DOMContentLoaded", f, false); 
-} else { f(); } 
-})(document, window, "yandex_metrika_callbacks"); 
-</script> 
+if (w.opera == "[object Opera]") {
+d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
 <!— /Yandex.Metrika counter —>

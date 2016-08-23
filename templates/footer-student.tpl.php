@@ -18,7 +18,7 @@
             </p>
             <a id="footer-kira-agency" href="http://kira-all.ru">
                 <span class="logo">
-                    <img src="/sites/all/themes/zvezdaudachi2/img/logo_kira_all.png">
+                    <img src="/sites/all/themes/zu/img/logo_kira_all.png">
                 </span>
                 <span class="text">
                     Проект разработан «Рекламным агентством Киры Аллейновой»
@@ -31,15 +31,15 @@
         <div id="zvezda-footer-middle">
             <div class="first-line-tite">ПРИ ПОДДЕРЖКЕ</div>
             <ul class="list-unstyled first-line">
-                <li style="background-image: url('/sites/all/themes/zvezdaudachi2/img/comitet_logo_footer.png');">
+                <li style="background-image: url('/sites/all/themes/zu/img/comitet_logo_footer.png');">
                     КОМИТЕТА ПО ОБРАЗОВАНИЮ ПРАВИТЕЛЬСТВА <br> САНКТ-ПЕТЕРБУРГА
                 </li>
-                <li style="background-image: url('/sites/all/themes/zvezdaudachi2/img/comitet_logo_footer.png')">
+                <li style="background-image: url('/sites/all/themes/zu/img/comitet_logo_footer.png')">
                     КОМИТЕТА ПО СОЦИАЛЬНОЙ ПОЛИТИКЕ ПРАВИТЕЛЬСТВА <br> САНКТ-ПЕТЕРБУРГА</li>
-                <li style="background-image: url('/sites/all/themes/zvezdaudachi2/img/comitet_logo_footer.png')">
+                <li style="background-image: url('/sites/all/themes/zu/img/comitet_logo_footer.png')">
                     КОМИТЕТА ПО МОЛОДЕЖНОЙ ПОЛИТИКЕ И ВЗАИМОДЕЙСТВИЮ С ОБЩЕСТВЕННЫМИ ОРГАНИЗАЦЯМИ ПРАВИТЕЛЬСТВА САНКТ-ПЕТЕРБРГА
                 </li>
-                <li style="background-image: url('/sites/all/themes/zvezdaudachi2/img/gibdd_logo_footer.png')" >
+                <li style="background-image: url('/sites/all/themes/zu/img/gibdd_logo_footer.png')" >
                     УГИБДД ГУ МВД РОССИИ ПО Г.САНКТ-ПЕТЕРБУРГУ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ
                 </li>
             </ul>
@@ -47,32 +47,37 @@
             <ul class="list-unstyled second-line">
                 <li>
                     <a href="http://flystation.net" target="_blank">
-                        <img src="/sites/all/themes/zvezdaudachi2/img/footer/logo_4.png">
+                        <img src="/sites/all/themes/zu/img/footer/logo_4.png">
                     </a>
                 </li>
                  <li>
                     <a href="http://www.mirage.ru/" target="_blank">
-                        <img src="/sites/all/themes/zvezdaudachi2/img/footer/logo_8.jpg">
+                        <img src="/sites/all/themes/zu/img/footer/logo_8.jpg">
                     </a>
                 </li>
                 <li>
                   <a href="http://artteatr.com/" target="_blank">
-                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/artteatr.jpg">
+                    <img src="/sites/all/themes/zu/img/partners/artteatr.jpg">
                   </a>
                 </li>
                 <li>
                   <a href="http://www.peterburg.ru/" target="_blank">
-                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/peterburg_ru_logo_180.png">
+                    <img src="/sites/all/themes/zu/img/partners/peterburg_ru_logo_180.png">
                   </a>
                 </li>
                 <li>
                   <a href="http://www.gorodovoy.spb.ru/" target="_blank">
-                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/gorodovoy_logo_180.png">
+                    <img src="/sites/all/themes/zu/img/partners/gorodovoy_logo_180.png">
                   </a>
                 </li>
                 <li>
                   <a href="http://www.arttube.ru/" target="_blank">
-                    <img src="/sites/all/themes/zvezdaudachi2/img/partners/arttube_logo_180.png">
+                    <img src="/sites/all/themes/zu/img/partners/arttube_logo_180.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="http://artmuza.spb.ru/" target="_blank">
+                    <img src="/sites/all/themes/zu/img/partners/artmuza_logo_180.png">
                   </a>
                 </li>
             </ul>

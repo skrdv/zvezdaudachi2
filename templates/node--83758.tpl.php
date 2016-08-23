@@ -14,12 +14,12 @@
 			</div>
 			<div class="school-front-casting">
 				<a href="/school/casting" class="link">
-					<img src="/sites/all/themes/zvezdaudachi2/img/school_casting.png">
+					<img src="/sites/all/themes/zu/img/school_casting.png">
 				</a>
 			</div>
 			<div class="school-front-send-work">
 				<a href="/node/add/konkurs-school" class="link">
-					<img src="/sites/all/themes/zvezdaudachi2/img/school_send_work.png">
+					<img src="/sites/all/themes/zu/img/school_send_work.png">
 				</a>
 			</div>
 		</div>

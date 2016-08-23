@@ -3,11 +3,11 @@ drupal_add_js('http://vk.com/js/api/share.js');
 drupal_add_js('http://userapi.com/js/api/openapi.js');
 
 // remove a tag from the head for Drupal 7
-function zvezdaudachi2_html_head_alter(&$head_elements) {
+function zu_html_head_alter(&$head_elements) {
   unset($head_elements['system_meta_generator']);
 }
 
-function zvezdaudachi2_menu_tree($variables) {
+function zu_menu_tree($variables) {
 
     if (isset($variables['element']) AND in_array($variables['element']['#original_link']['menu_name'],array('menu-school-menu','menu-student-menu'))){
         return '<ul class="list-unstyled">' . $variables['tree'] . '</ul>';
@@ -15,7 +15,7 @@ function zvezdaudachi2_menu_tree($variables) {
         return bootstrap_menu_tree($variables);
     }
 }
-function zvezdaudachi2_menu_link($variables)
+function zu_menu_link($variables)
 {
     if (in_array($variables['element']['#original_link']['menu_name'],array('menu-school-menu','menu-student-menu'))){
         $element = $variables['element'];
@@ -31,7 +31,7 @@ function zvezdaudachi2_menu_link($variables)
     }
 }
 
-function zvezdaudachi2_textfield($variables){
+function zu_textfield($variables){
     $element = $variables['element'];
     $element['#attributes']['type'] = 'text';
     element_set_attributes($element, array(
@@ -62,7 +62,7 @@ function zvezdaudachi2_textfield($variables){
 }
 
 
-function zvezdaudachi2_theme(&$existing, $type, $theme, $path) {
+function zu_theme(&$existing, $type, $theme, $path) {
 
     $items=array();
     $items['user_login'] = array(
@@ -72,25 +72,25 @@ function zvezdaudachi2_theme(&$existing, $type, $theme, $path) {
 
     return $items;
 }
-function zvezdaudachi2_preprocess_user_login(&$variables) {
+function zu_preprocess_user_login(&$variables) {
     $variables['rendered'] = drupal_render_children($variables['form']);
 }
 
-function zvezdaudachi2_field_widget_form_alter(&$element, &$form_state, $context){
+function zu_field_widget_form_alter(&$element, &$form_state, $context){
     if(isset($element[0]['#field_name']) && isset($element[0]['#type']) && $element[0]['#type']=='media' && preg_match('/zagruzka_[a-z0-9]+_etap/i',$element[0]['#field_name'])){
         $element['#file_upload_title']='Работа может быть загружена с компьютера, принимаются ссылки с сайтов Youtube.com  и VK.com';
     }
 }
-function zvezdaudachi2_element_info_alter(&$type) {
+function zu_element_info_alter(&$type) {
     if (isset($type['text_format']['#process'])){
         foreach ($type['text_format']['#process'] as &$callback) {
             if ($callback === 'filter_process_format') {
-                $callback = 'zvezdaudachi2_process_format';
+                $callback = 'zu_process_format';
             }
         }
     }
 }
-function zvezdaudachi2_process_format($element) {
+function zu_process_format($element) {
     $fields = array(
         'field__vkontakte'
     );
@@ -101,7 +101,7 @@ function zvezdaudachi2_process_format($element) {
     return $element;
 }
 
-function zvezdaudachi2_webform_date($variables) {
+function zu_webform_date($variables) {
     $element = $variables['element'];
 
     //Save the data from the array into variables.
@@ -154,7 +154,7 @@ function zvezdaudachi2_webform_date($variables) {
 
     return $output;
 }
-function zvezdaudachi2_process_page(&$vars, $hooks)
+function zu_process_page(&$vars, $hooks)
 {
     global $user;
     if (isset($vars['tabs']['#primary']) && is_array($vars['tabs']['#primary']) && sizeof($vars['tabs']['#primary'])) {
@@ -214,15 +214,15 @@ function zvezdaudachi2_process_page(&$vars, $hooks)
     }
 }
 
-function zvezdaudachi2_webform_number($variables){
+function zu_webform_number($variables){
     $variables['element']['#attributes'] = array('class' => array('form-control'));
     return theme_webform_number($variables);
 }
-function zvezdaudachi2_webform_email($variables){
+function zu_webform_email($variables){
     $variables['element']['#attributes'] = array('class' => array('form-control'));
     return theme_webform_number($variables);
 }
-function zvezdaudachi2_pager($variables) {
+function zu_pager($variables) {
     $output = "";
     $items = array();
     $tags = $variables['tags'];
@@ -364,7 +364,7 @@ function zvezdaudachi2_pager($variables) {
     return $output;
 }
 
-function zvezdaudachi2_form_alter(&$form,&$form_state,$form_id){
+function zu_form_alter(&$form,&$form_state,$form_id){
 
 
 
@@ -383,7 +383,7 @@ function zvezdaudachi2_form_alter(&$form,&$form_state,$form_id){
     }
 
 }
-function zvezdaudachi2_username_alter(&$name, $account){
+function zu_username_alter(&$name, $account){
     $profile= null;
     if(!$profile = profile2_load_by_user($account->uid, 'student')){
         $profile= profile2_load_by_user($account->uid, 'school');
@@ -402,7 +402,7 @@ function zvezdaudachi2_username_alter(&$name, $account){
         }
     }
 }
-function zvezdaudachi2_form_user_register_form_alter(&$form,&$form_state){
+function zu_form_user_register_form_alter(&$form,&$form_state){
 
 
     if(arg(2)){
@@ -423,14 +423,14 @@ function zvezdaudachi2_form_user_register_form_alter(&$form,&$form_state){
     }
 }
 
-function zvezdaudachi2_preprocess_html(&$vars, $hook){
+function zu_preprocess_html(&$vars, $hook){
     if( current_path() == 'user/register' ){
         drupal_goto('content/register');
     }
-    $vars['THEMEPATH']='/sites/all/themes/zvezdaudachi2';
+    $vars['THEMEPATH']='/sites/all/themes/zu';
 }
 
-function zvezdaudachi2_get_add_konkurs_link(){
+function zu_get_add_konkurs_link(){
     global $user;
     $url = null;
     if($user){
@@ -454,7 +454,7 @@ function zvezdaudachi2_get_add_konkurs_link(){
     return $url;
 }
 
-function zvezdaudachi2_get_currnet_menu_name(){
+function zu_get_currnet_menu_name(){
 
 
     $menu_school_name = 'menu-school-menu';
@@ -573,7 +573,7 @@ function zvezdaudachi2_get_currnet_menu_name(){
 }
 
 
-function zvezdaudachi2_preprocess_page(&$variables, $hook) {
+function zu_preprocess_page(&$variables, $hook) {
    //some other stuff
 if (isset($variables['node'])) {
     $variables['theme_hook_suggestions'][] = 'page__type__'. $variables['node']->type;
@@ -583,7 +583,7 @@ if (isset($variables['node'])) {
 
 /*
 
-function zvezdaudachi2_preprocess_page(&$variables) {
+function zu_preprocess_page(&$variables) {
     if (!empty($variables['node']) && !empty($variables['node']->type)) {
         $variables['theme_hook_suggestions'][] = 'page__node__' . $variables['node']->type;
     }

@@ -1,4 +1,4 @@
-<?php  $add_node_konkurs_link = zvezdaudachi2_get_add_konkurs_link(); ?>
+<?php  $add_node_konkurs_link = zu_get_add_konkurs_link(); ?>
 <div id="views-exposed-form--konkurs">
     <div class="row">
        <div class="col-md-1 star-kasting-wrapper hidden-xs">

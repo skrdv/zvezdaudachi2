@@ -9,12 +9,12 @@
       </div>
       <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
         <div class="zvezda-logo-link">
-          <img src="/sites/all/themes/zvezdaudachi2/img/logo_leto2016.png" />
+          <img src="/sites/all/themes/zu/img/logo_leto2016.png" />
         </div>
       </div>
       <div class="col-xs-8 col-sm-8 col-md-6 col-lg-6">
         <a href="http://www.cds.spb.ru/" target="_blank" class="pull-right">
-          <img src="/sites/all/themes/zvezdaudachi2/img/zvezda_front/cds-logo.png" />
+          <img src="/sites/all/themes/zu/img/zvezda_front/cds-logo.png" />
         </a>
       </div>
   </div>

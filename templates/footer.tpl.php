@@ -9,7 +9,7 @@
       <a class="sotrudnichestvo" href="/content/sotrudnichestvo">СОТРУДНИЧЕСТВО</a>
       <a id="footer-kira-agency" href="http://kira-all.ru" target="_blank">
         <span class="logo">
-          <img src="/sites/all/themes/zvezdaudachi2/img/logo_kira_all.png">
+          <img src="/sites/all/themes/zu/img/logo_kira_all.png">
         </span>
         <span class="text">Проект разработан «Рекламным агентством Киры Аллейновой»</span>
         <span class="clearfix"></span>
@@ -29,32 +29,37 @@
         <ul class="list-unstyled second-line">
           <li>
             <a href="http://flystation.net" target="_blank">
-              <img src="/sites/all/themes/zvezdaudachi2/img/footer/logo_4.png">
+              <img src="/sites/all/themes/zu/img/footer/logo_4.png">
             </a>
           </li>
           <li>
             <a href="http://www.mirage.ru/" target="_blank">
-              <img src="/sites/all/themes/zvezdaudachi2/img/footer/logo_8.jpg">
+              <img src="/sites/all/themes/zu/img/footer/logo_8.jpg">
             </a>
           </li>
           <li>
             <a href="http://artteatr.com/" target="_blank">
-              <img src="/sites/all/themes/zvezdaudachi2/img/partners/artteatr.jpg">
+              <img src="/sites/all/themes/zu/img/partners/artteatr.jpg">
             </a>
           </li>
           <li>
             <a href="http://www.peterburg.ru/" target="_blank">
-              <img src="/sites/all/themes/zvezdaudachi2/img/partners/peterburg_ru_logo_180.png">
+              <img src="/sites/all/themes/zu/img/partners/peterburg_ru_logo_180.png">
             </a>
           </li>
           <li>
             <a href="http://www.gorodovoy.spb.ru/" target="_blank">
-              <img src="/sites/all/themes/zvezdaudachi2/img/partners/gorodovoy_logo_180.png">
+              <img src="/sites/all/themes/zu/img/partners/gorodovoy_logo_180.png">
             </a>
           </li>
           <li>
             <a href="http://www.arttube.ru/" target="_blank">
-              <img src="/sites/all/themes/zvezdaudachi2/img/partners/arttube_logo_180.png">
+              <img src="/sites/all/themes/zu/img/partners/arttube_logo_180.png">
+            </a>
+          </li>
+          <li>
+            <a href="http://artmuza.spb.ru/" target="_blank">
+              <img src="/sites/all/themes/zu/img/partners/artmuza_logo_180.png">
             </a>
           </li>
         </ul>

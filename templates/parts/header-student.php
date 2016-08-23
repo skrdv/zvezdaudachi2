@@ -13,12 +13,12 @@ $uri == 'zvezdaudachi.com//moi-raboty' or
 $uri == 'zvezdaudachi.com//user' ) {?>
 <div id="btn-student-casting">
   <a href="/student/casting" class="link">
-		<img src="/sites/all/themes/zvezdaudachi2/img/student_casting.png">
+		<img src="/sites/all/themes/zu/img/student_casting.png">
 	</a>
 </div>
 <div id="btn-student-work">
   <a href="/node/add/konkurs-student" class="link">
-		<img src="/sites/all/themes/zvezdaudachi2/img/student_send_work.png">
+		<img src="/sites/all/themes/zu/img/student_send_work.png">
 	</a>
 </div>
 <?php } ?>
@@ -30,7 +30,7 @@ $uri == 'zvezdaudachi.com//user' ) {?>
   <div class="row">
     <div class="col-xs-16 col-sm-16 col-md-4 col-lg-4">
       <a class="link logo-student" href="/">
-        <img src="/sites/all/themes/zvezdaudachi2/img/logo_leto2016.png" />
+        <img src="/sites/all/themes/zu/img/logo_leto2016.png" />
       </a>
     </div>
     <div class="col-xs-16 col-sm-16 col-md-12 col-lg-12">
@@ -44,7 +44,7 @@ $uri == 'zvezdaudachi.com//user' ) {?>
       </div>
       <div class="col-xs-16 col-sm-16 col-md-8 col-lg-8">
         <a href="http://www.cds.spb.ru/" target="_blank" class="pull-right link logo-cds-header-student">
-          <img src="/sites/all/themes/zvezdaudachi2/img/zvezda_front/cds-logo.png" />
+          <img src="/sites/all/themes/zu/img/zvezda_front/cds-logo.png" />
         </a>
       </div>
       <div class="col-xs-16 col-sm-16 col-md-16 col-lg-16">

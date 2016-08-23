@@ -1,5 +1,5 @@
-name = Bootstrap Sub-theme
-description = A Bootstrap Sub-theme.
+name = zu
+description = ZU12 Bootstrap Sub-theme.
 core = 7.x
 base theme = bootstrap
 
